@@ -200,22 +200,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const achievData = [
         {
             year: "1999",
-            photo: "../assets/img_6.webp",
+            photo: "assets/img_6.webp",
             desc: "Inception of our first flagship flagship store, introducing bespoke tailoring and couture coordinates."
         },
         {
             year: "2005",
-            photo: "../assets/img_10.webp",
+            photo: "assets/img_10.webp",
             desc: "Awarded 'Eco Label of the Year' for integrating organic cotton, silk, and sustainable textiles."
         },
         {
             year: "2012",
-            photo: "../assets/img_11.webp",
+            photo: "assets/img_11.webp",
             desc: "Recognised for designing the most innovative Fashion Store showroom concept in the design industry."
         },
         {
             year: "2020",
-            photo: "../assets/img_15.webp",
+            photo: "assets/img_15.webp",
             desc: "Launched our virtual fitting tool, bridging premium styling and custom tailoring to global clients."
         }
     ];

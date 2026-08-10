@@ -1,5 +1,5 @@
-/* ==========================================================================
-   STACKLY Healthcare — loading.js  (v2 — Light theme)
+ï»¿/* ==========================================================================
+   STACKLY Healthcare ï¿½ loading.js  (v2 ï¿½ Light theme)
    Injects and controls the animated loading overlay
    ========================================================================== */
 
@@ -48,7 +48,7 @@
                 <path d="M50 0 C50 35, 65 50, 100 50 C65 50, 50 65, 50 100 C50 65, 35 50, 0 50 C35 50, 50 35, 50 0 Z" fill="#5EBA9B"/>
             </svg>`;
 
-        /* Silk Drape Wave line — smooth waving path representing fabric flow */
+        /* Silk Drape Wave line ï¿½ smooth waving path representing fabric flow */
         const ecgPts1 = "0,26 30,22 60,30 90,22 120,30 150,22 180,30 210,22 240,30 270,22 300,30 320,26";
         const ecgPts2 = "320,26 350,22 380,30 410,22 440,30 470,22 500,30 530,22 560,30 590,22 620,30 640,26";
 
@@ -86,7 +86,7 @@
                 <!-- Logo -->
                 <div class="loader-logo-wrap">
                     <img class="loader-logo-img"
-                         src="../assets/home/stackly-logo.webp"
+                         src="assets/home/stackly-logo.webp"
                          onerror="this.style.display='none';document.getElementById('loader-text-logo').style.display='block';"
                          alt="Stackly Logo">
                     <span id="loader-text-logo" style="display:none;font-family:'Outfit',sans-serif;font-size:1.9rem;font-weight:800;color:#5EBA9B;letter-spacing:-0.02em;">STACKLY</span>
@@ -229,4 +229,5 @@
     }
 
 })();
+
 
