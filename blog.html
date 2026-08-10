@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - STACKLY fashion store</title>
+    <meta name="description" content="Expert perspectives on fashion technology, sartorial best practices, and the future of styling and tailoring.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css?v=3">
+    <link rel="stylesheet" href="../css/blog.css?v=3">
+    <link rel="stylesheet" href="../css/loading.css">
+</head>
+<body class="blog-page">
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="page-scroll-indicator"></div>
+    </div>
+
+    <div class="site-wrapper">
+
+        <!-- ===== NAVBAR ===== -->
+        <header class="navbar-wrapper" id="blog-navbar">
+            <div class="navbar-pill" id="navbar-pill-element">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../assets/home/stackly-logo.webp" alt="STACKLY Logo" class="brand-logo-img">
+                </a>
+                                <nav class="navbar-links" id="main-nav-links">
+                    <a href="index.html" class="nav-item " id="nav-item-home">Home</a>
+                    <a href="about.html" class="nav-item " id="nav-item-about">About us</a>
+                    <a href="service.html" class="nav-item " id="nav-item-services">Service</a>
+                    <a href="products.html" class="nav-item " id="nav-item-products">Products</a>
+                    <a href="blog.html" class="nav-item active" id="nav-item-blog">Blog</a>
+                    <a href="contact.html" class="nav-item " id="nav-item-contact">Contact</a>
+                    <!-- Mobile Nav Actions -->
+                    <div class="mobile-nav-actions">
+                        <a href="cart.html" class="btn-mobile-cart" style="color: var(--primary-dark); font-weight: 600; margin-bottom: 10px; display: block; text-decoration: none;"><i class="fa-solid fa-bag-shopping"></i> Cart</a>
+                        <a href="login.html" class="btn-login">Login</a>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </nav>
+                                <div class="navbar-actions">
+                    <a href="cart.html" class="btn-cart-nav" id="btn-navbar-cart" aria-label="View Cart" style="position: relative; margin-right: 20px; color: var(--primary-dark); font-size: 1.25rem; display: inline-flex; align-items: center; text-decoration: none; transition: var(--transition-quick);">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-badge" id="nav-cart-count" style="position: absolute; top: -8px; right: -10px; background-color: var(--primary); color: white; border-radius: 50%; width: 16px; height: 16px; display: none; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700;">0</span>
+                    </a>
+                    <a href="login.html"  class="btn-login"  id="btn-navbar-login">Login</a>
+                    <a href="signup.html" class="btn-signup" id="btn-navbar-signup">Signup</a>
+                    <button class="menu-hamburger" id="nav-menu-hamburger"
+                            aria-label="Toggle Navigation Menu" aria-expanded="false">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===== BLOG HERO SECTION — Dynamic Sliding ===== -->
+        <section class="blog-hero" id="blog-hero">
+
+            <!-- ── Slide backgrounds (one per topic) ── -->
+            <div class="bh-slides" aria-hidden="true">
+                <!-- Base background image (always visible) -->
+                <div class="bh-bg-img"></div>
+                <!-- Per-topic colour overlays crossfade on top -->
+                <div class="bh-slide bh-slide-all   bh-slide-active"></div>
+                <div class="bh-slide bh-slide-imaging"></div>
+                <div class="bh-slide bh-slide-monitoring"></div>
+                <div class="bh-slide bh-slide-ai"></div>
+                <div class="bh-slide bh-slide-wellness"></div>
+                <div class="bh-bg-overlay"></div>
+                <!-- Animated particles -->
+                <div class="bh-particle bh-p1"></div>
+                <div class="bh-particle bh-p2"></div>
+                <div class="bh-particle bh-p3"></div>
+                <div class="bh-particle bh-p4"></div>
+            </div>
+
+            <!-- Main content -->
+            <div class="bh-inner">
+
+                <!-- Eyebrow label — updates per topic -->
+                <div class="bh-eyebrow" id="bh-eyebrow">
+                    <span class="bh-eyebrow-dot"></span>
+                    <span id="bh-eyebrow-text">Sartorial Insights</span>
+                    <span class="bh-eyebrow-line"></span>
+                </div>
+
+                <!-- Heading — crossfades on tab switch -->
+                <h1 class="bh-heading" id="bh-heading">
+                    <span class="bh-word bh-w1" id="bh-title-line1">The Stackly</span>
+                    <span class="bh-word bh-w2"><em class="bh-accent bh-accent-all" id="bh-title-line2">Journal</em></span>
+                </h1>
+
+                <!-- Animated underline -->
+                <div class="bh-heading-line" id="bh-heading-line"></div>
+
+                <!-- Description -->
+                <p class="bh-desc" id="bh-desc">
+                    Expert perspectives on fashion technology, sartorial best practices,<br>
+                    and the future of styling and tailoring.
+                </p>
+
+                <!-- Topic filter pills -->
+                <div class="bh-filters" id="bh-filters">
+                    <button class="bh-filter active" data-filter="all">All topics</button>
+                    <button class="bh-filter" data-filter="imaging">Imaging</button>
+                    <button class="bh-filter" data-filter="monitoring">Monitoring</button>
+                    <button class="bh-filter" data-filter="ai">AI in apparel</button>
+                    <button class="bh-filter" data-filter="wellness">Wellness</button>
+                </div>
+            </div>
+
+            <!-- Stats bar at hero bottom -->
+            <div class="bh-stats-bar" id="bh-stats-bar">
+                <div class="bh-stat">
+                    <span class="bh-stat-num" data-target="120">0</span><span class="bh-stat-suf">+</span>
+                    <span class="bh-stat-label">Articles Published</span>
+                </div>
+                <div class="bh-stat-div"></div>
+                <div class="bh-stat">
+                    <span class="bh-stat-num" data-target="48">0</span><span class="bh-stat-suf">K</span>
+                    <span class="bh-stat-label">Monthly Readers</span>
+                </div>
+                <div class="bh-stat-div"></div>
+                <div class="bh-stat">
+                    <span class="bh-stat-num" data-target="35">0</span><span class="bh-stat-suf">+</span>
+                    <span class="bh-stat-label">Expert Contributors</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ── Inline hero slide styles ── -->
+        <style>
+        /* ── Slides container (matches section size) ── */
+        .bh-slides { position:absolute; inset:0; z-index:0; }
+
+        /* ── Base background image ── */
+        #blog-hero .bh-bg-img {
+            position:absolute; inset:0;
+            background-image: url('../assets/blog_hero.webp');
+            background-size:cover; background-position:center;
+            transform:scale(1.06);
+            animation: bh-bg-zoom 22s ease-in-out infinite alternate;
+        }
+
+        /* ── Per-topic colour overlays (on top of image via multiply) ── */
+        .bh-slide  { position:absolute; inset:0; opacity:0; transition:opacity 0.7s ease; mix-blend-mode:multiply; }
+        .bh-slide-active { opacity:1; }
+
+        .bh-slide-all        { background: linear-gradient(135deg,rgba(7,21,33,0.85) 0%,rgba(10,42,58,0.8) 50%,rgba(6,52,68,0.85) 100%); mix-blend-mode:normal; }
+        .bh-slide-imaging    { background: linear-gradient(135deg,rgba(7,21,33,0.85) 0%,rgba(13,31,60,0.85) 50%,rgba(16,36,86,0.9) 100%); mix-blend-mode:normal; }
+        .bh-slide-monitoring { background: linear-gradient(135deg,rgba(7,21,33,0.85) 0%,rgba(26,18,37,0.85) 50%,rgba(38,22,74,0.9) 100%); mix-blend-mode:normal; }
+        .bh-slide-ai         { background: linear-gradient(135deg,rgba(7,21,33,0.85) 0%,rgba(10,36,24,0.85) 50%,rgba(14,51,34,0.9) 100%); mix-blend-mode:normal; }
+        .bh-slide-wellness   { background: linear-gradient(135deg,rgba(7,21,33,0.85) 0%,rgba(42,16,16,0.85) 50%,rgba(61,22,22,0.9) 100%); mix-blend-mode:normal; }
+
+        /* ── Hero text crossfade ── */
+        .bh-inner { position:relative; z-index:2; }
+        #bh-eyebrow, #bh-heading, #bh-desc {
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+        .bh-hero-changing #bh-eyebrow,
+        .bh-hero-changing #bh-heading,
+        .bh-hero-changing #bh-desc {
+            opacity:0; transform:translateY(12px);
+        }
+
+        /* ── Active filter accent colours ── */
+        .bh-filter { transition: background 0.3s, color 0.3s, border-color 0.3s; }
+        .bh-filter[data-filter="imaging"].active    { background:#1e40af; border-color:#1e40af; }
+        .bh-filter[data-filter="monitoring"].active { background:#6d28d9; border-color:#6d28d9; }
+        .bh-filter[data-filter="ai"].active         { background:#065f46; border-color:#065f46; }
+        .bh-filter[data-filter="wellness"].active   { background:#991b1b; border-color:#991b1b; }
+
+        /* Spin keyframe for send button */
+        @keyframes spin { to { transform: rotate(360deg); } }
+        </style>
+
+        <!-- ── Hero slide script ── -->
+        <script>
+        (function(){
+            const slides = {
+                all:        { eyebrow:'Sartorial Insights',    line1:'The Stackly',       line2:'Journal',       desc:'Expert perspectives on fashion technology, sartorial best practices,<br>and the future of custom styling.' },
+                imaging:    { eyebrow:'Runway & Aesthetics',  line1:'Advanced',          line2:'Aesthetics',    desc:'Discover breakthroughs in seasonal styling, visual merchandising, and next-generation<br>couture design.' },
+                monitoring: { eyebrow:'Client Curation',      line1:'Bespoke',           line2:'Curation',      desc:'Stay updated on the latest wardrobe trends, personal styling advice<br>and custom wardrobe tracking innovations.' },
+                ai:         { eyebrow:'Artificial Intelligence',line1:'AI in',            line2:'Fashion',       desc:'Explore how machine learning, 3D body modeling, and predictive analytics are<br>transforming sustainable style design worldwide.' },
+                wellness:   { eyebrow:'Style & Trends',       line1:'Your Path to',      line2:'Style',         desc:'Practical guides on wardrobe capsule styling, organic fabrics, textile care<br>and sustainable coordinate strategies for better dressing.' }
+            };
+
+            const hero       = document.getElementById('blog-hero');
+            const eyebrowEl  = document.getElementById('bh-eyebrow-text');
+            const line1El    = data => {}; // Dummy placeholder
+            const line2El    = document.getElementById('bh-title-line2');
+            const descEl     = document.getElementById('bh-desc');
+            const allBgSlides= document.querySelectorAll('.bh-slide');
+            const filters    = document.querySelectorAll('.bh-filter');
+
+            function switchSlide(key){
+                const data = slides[key];
+                // fade out text
+                hero.classList.add('bh-hero-changing');
+                // crossfade backgrounds
+                allBgSlides.forEach(s => s.classList.remove('bh-slide-active'));
+                const target = document.querySelector('.bh-slide-'+key);
+                if(target) target.classList.add('bh-slide-active');
+
+                setTimeout(()=>{
+                    eyebrowEl.textContent   = data.eyebrow;
+                    const line1El_real = document.getElementById('bh-title-line1');
+                    if (line1El_real) line1El_real.textContent = data.line1;
+                    line2El.innerHTML       = data.line2;
+                    line2El.className       = 'bh-accent bh-accent-' + key;
+                    descEl.innerHTML        = data.desc;
+                    hero.classList.remove('bh-hero-changing');
+                }, 400);
+            }
+
+            filters.forEach(btn => {
+                btn.addEventListener('click', function(){
+                    filters.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    switchSlide(this.dataset.filter);
+                });
+            });
+        })();
+        </script>
+
+        <!-- ===== BLOG FEATURED ARTICLES SECTION ===== -->
+        <section class="blog-posts-section" id="blog-articles">
+            <div class="bp-inner">
+
+                <!-- Section Header -->
+                <div class="bp-header" id="bp-header">
+                    <span class="bp-eyebrow">
+                        <span class="bp-eyebrow-dot"></span>
+                        Latest from the Journal
+                    </span>
+                    <h2 class="bp-heading">
+                        <span class="bp-hline bp-hline-1">Insights shaping</span>
+                        <span class="bp-hline bp-hline-2">modern <em class="bp-accent">fashion store</em></span>
+                    </h2>
+                    <div class="bp-heading-bar"></div>
+                </div>
+
+                <!-- Post 1: AI Assisted Styling Studio -->
+                <div class="bp-post bp-post-right" id="bp-post-1" style="margin-bottom: 0;">
+                    <div class="bp-post-text-col">
+                        <span class="bp-post-cat">Fashion Innovation</span>
+                        <h2 class="bp-post-title">
+                            AI Assisted Styling
+                            <em class="bp-post-accent">Studio</em>
+                        </h2>
+                        <p class="bp-post-desc">
+                            Stackly Designer apparels enable continuous client styling with
+                            accurate real-time fashion insights. AI-powered styling insights are
+                            redefining the speed and accuracy of sartorial decisions at scale.
+                        </p>
+                        <div class="bp-post-meta">
+                            <span class="bp-meta-badge">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                8 min read
+                            </span>
+                            <span class="bp-meta-sep">·</span>
+                            <span>June 20, 2025</span>
+                        </div>
+                        <a href="404.html" class="bp-post-link">
+                            Read Article
+                            <span class="bp-post-link-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="bp-post-img-col">
+                        <div class="bp-post-img-frame" data-tilt>
+                             <img src="../assets/img_19.webp"
+                                  alt="AI Assisted Styling Systems" class="bp-post-img">
+                            <div class="bp-post-img-overlay"></div>
+                            <span class="bp-post-img-tag">AI Innovation</span>
+                            <div class="bp-corner bp-c-tl"></div>
+                            <div class="bp-corner bp-c-br"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div><!-- end .site-wrapper -->
+
+    <!-- ===== LATEST ARTICLES SECTION ===== -->
+    <section class="blog-latest-section" id="blog-latest">
+        <div class="bl-inner">
+
+            <!-- Section Header -->
+            <div class="bl-header" id="bl-header">
+                <span class="bl-eyebrow">
+                    <span class="bl-eyebrow-dot"></span>
+                    Latest Editorial Posts
+                </span>
+                <h2 class="bl-heading">
+                    <span class="bl-hline bl-hline-1">Explore our most</span>
+                    <span class="bl-hline bl-hline-2">recent <em class="bl-accent">publications</em></span>
+                </h2>
+                <div class="bl-heading-bar"></div>
+                <p class="bl-subtext">
+                    Curated reads from our editorial team — trend-focused, style-focused,
+                    and written for both fashion experts and curious minds.
+                </p>
+            </div>
+
+            <!-- Cards grid -->
+            <div class="bl-cards-grid">
+
+                <!-- Card 1 -->
+                <div class="bl-card" id="bl-card-1" style="--bl-delay:0.08s">
+                    <div class="bl-card-img-wrap">
+                        <img src="../assets/img_35.webp"
+                             alt="ISO 13485 Compliance" class="bl-card-img">
+                        <div class="bl-card-img-overlay"></div>
+                        <!-- Hover shine sweep -->
+                        <div class="bl-card-shine"></div>
+                    </div>
+                    <div class="bl-card-body">
+                        <span class="bl-card-tag">Compliance</span>
+                        <h3 class="bl-card-title">
+                            ISO 13485:2016 — A Practical Guide for Retail Styling Teams
+                        </h3>
+                        <p class="bl-card-excerpt">
+                            Understanding what ISO 13485 certification means for Designer apparel
+                            suppliers and what questions to ask during procurement.
+                        </p>
+                        <div class="bl-card-footer">
+                            <span class="bl-card-date">Jan 10, 2026 · 9 min</span>
+                            <a href="404.html" class="bl-card-read">
+                                Read
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Number badge -->
+                    <div class="bl-card-number">01</div>
+                    <!-- Bottom bar sweep -->
+                    <div class="bl-card-bar"></div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bl-card" id="bl-card-2" style="--bl-delay:0.2s">
+                    <div class="bl-card-img-wrap">
+                        <img src="../assets/img_36.webp"
+                             alt="Digital Sizing Systems" class="bl-card-img">
+                        <div class="bl-card-img-overlay"></div>
+                        <div class="bl-card-shine"></div>
+                    </div>
+                    <div class="bl-card-body">
+                        <span class="bl-card-tag">Sizing</span>
+                        <h3 class="bl-card-title">
+                            Digital Sizing Systems: Why Every Custom Boutique Needs It
+                        </h3>
+                        <p class="bl-card-excerpt">
+                            Digital sizing has transformed custom tailoring. We examine the evidence,
+                            designer training, and fit precision improvements.
+                        </p>
+                        <div class="bl-card-footer">
+                            <span class="bl-card-date">Dec 10, 2025 · 9 min</span>
+                            <a href="404.html" class="bl-card-read">
+                                Read
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bl-card-number">02</div>
+                    <div class="bl-card-bar"></div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bl-card" id="bl-card-3" style="--bl-delay:0.32s">
+                    <div class="bl-card-img-wrap">
+                        <img src="../assets/img_37.webp"
+                             alt="AI Predictive Maintenance" class="bl-card-img">
+                        <div class="bl-card-img-overlay"></div>
+                        <div class="bl-card-shine"></div>
+                    </div>
+                    <div class="bl-card-body">
+                        <span class="bl-card-tag">AI in apparel</span>
+                        <h3 class="bl-card-title">
+                            Predictive Maintenance: Using IoT and AI to Prevent Device Downtime
+                        </h3>
+                        <p class="bl-card-excerpt">
+                            How connected Designer apparels and machine learning algorithms are
+                            eliminating unplanned equipment failures before they happen.
+                        </p>
+                        <div class="bl-card-footer">
+                            <span class="bl-card-date">Dec 10, 2025 · 9 min</span>
+                            <a href="404.html" class="bl-card-read">
+                                Read
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bl-card-number">03</div>
+                    <div class="bl-card-bar"></div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bl-card" id="bl-card-4" style="--bl-delay:0.08s">
+                    <div class="bl-card-img-wrap">
+                        <img src="../assets/img_38.webp"
+                             alt="Sustainable Fabric Selection" class="bl-card-img">
+                        <div class="bl-card-img-overlay"></div>
+                        <div class="bl-card-shine"></div>
+                    </div>
+                    <div class="bl-card-body">
+                        <span class="bl-card-tag bg-sustainability">Sustainability</span>
+                        <h3 class="bl-card-title">
+                            Sustainable Fabric Selection: Curating Eco-Luxury
+                        </h3>
+                        <p class="bl-card-excerpt">
+                            How premium fashion mills are introducing zero-waste organic silks and certified merino wools to elevate modern styling.
+                        </p>
+                        <div class="bl-card-footer">
+                            <span class="bl-card-date">Nov 22, 2025 · 8 min</span>
+                            <a href="404.html" class="bl-card-read">
+                                Read
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bl-card-number">04</div>
+                    <div class="bl-card-bar"></div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bl-card" id="bl-card-5" style="--bl-delay:0.2s">
+                    <div class="bl-card-img-wrap">
+                        <img src="../assets/img_31.webp"
+                             alt="The Art of the Drape" class="bl-card-img">
+                        <div class="bl-card-img-overlay"></div>
+                        <div class="bl-card-shine"></div>
+                    </div>
+                    <div class="bl-card-body">
+                        <span class="bl-card-tag bg-craftsmanship">Craftsmanship</span>
+                        <h3 class="bl-card-title">
+                            The Art of the Drape: Master Tailoring Techniques
+                        </h3>
+                        <p class="bl-card-excerpt">
+                            Explore the secret mechanics behind fluid jacket silhouettes, interior floating canvases, and hand-basted shoulder curves.
+                        </p>
+                        <div class="bl-card-footer">
+                            <span class="bl-card-date">Nov 05, 2025 · 12 min</span>
+                            <a href="404.html" class="bl-card-read">
+                                Read
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bl-card-number">05</div>
+                    <div class="bl-card-bar"></div>
+                </div>
+                      <!-- Card 6 -->
+                <div class="bl-card" id="bl-card-6" style="--bl-delay:0.32s">
+                    <div class="bl-card-img-wrap">
+                        <img src="../assets/img_23.webp"
+                             alt="The Art of the Drape" class="bl-card-img">
+                        <div class="bl-card-img-overlay"></div>
+                        <div class="bl-card-shine"></div>
+                    </div>
+                    <div class="bl-card-body">
+                        <span class="bl-card-tag bg-craftsmanship">Craftsship</span>
+                        <h3 class="bl-card-title">
+                            The Art  Master Tailoring Techniques
+                        </h3>
+                        <p class="bl-card-excerpt">
+                            Explore the secret mechanics behind fluid jacket silhouettes, interior floating canvases, and hand-basted shoulder curves.
+                        </p>
+                        <div class="bl-card-footer">
+                            <span class="bl-card-date">Nov 08, 2025 · 13 min</span>
+                            <a href="404.html" class="bl-card-read">
+                                Read
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bl-card-number">05</div>
+                    <div class="bl-card-bar"></div>
+                </div>
+
+            </div>
+        </section>
+
+  
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer" id="site-footer">
+        <div class="footer-bg-anim"></div>
+        <div class="footer-inner">
+            <div class="footer-col footer-brand-col">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="../assets/home/stackly-logo.webp" alt="Stackly Logo" class="footer-logo">
+                </a>
+                <p class="footer-tagline">At Stackly, we deliver refined styling and custom-fit apparel focused on quality, craftsmanship, and timeless design.</p>
+                <div class="footer-contact-details">
+                    <a href="tel:+18005551234" class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+                        +1 (800) 555-4321
+                    </a>
+                    <a href="mailto:concierge@stackly.com" class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        concierge@stackly.com
+                    </a>
+                </div>
+            </div>
+                        <div class="footer-col footer-office-col">
+                <h4 class="footer-col-title">Office</h4>
+                <address class="footer-address">
+                    Salem Shop,<br>
+                    MMR Complex, Chinna Thirupathi,<br>
+                    near Chinna Muniyappan Kovil,<br>
+                    Salem, Tamil Nadu 636008
+                </address>
+                    <!-- Embedded Google Map -->
+                <div class="footer-map" style="margin-top: 12px; border-radius: 8px; overflow: hidden; height: 100px; border: 1px solid rgba(255,255,255,0.1);">
+                    <iframe src="https://maps.google.com/maps?q=MMR%20Complex,%20Chinna%20Thirupathi,%20near%20Chinna%20Muniyappan%20Kovil,%20Salem,%20Tamil%20Nadu%20636008&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="footer-col footer-links-col">
+                <h4 class="footer-col-title">Links</h4>
+                <nav class="footer-nav">
+                    <a href="index.html" class="footer-nav-link">Home</a>
+                    <a href="about.html" class="footer-nav-link">About us</a>
+                    <a href="service.html" class="footer-nav-link">Service</a>
+                    <a href="blog.html" class="footer-nav-link">Blog</a>
+                    <a href="contact.html" class="footer-nav-link">Contact</a>
+                    <a href="login.html" class="footer-nav-link">Login</a>
+                    <a href="signup.html" class="footer-nav-link">Signup</a>
+                </nav>
+            </div>
+            <div class="footer-col footer-social-col">
+                <h4 class="footer-col-title">Follow us</h4>
+                <div class="footer-social-icons">
+                    <a href="404.html" class="footer-social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                    <a href="404.html" class="footer-social-btn" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="404.html" class="footer-social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="404.html" class="footer-social-btn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96C1 8.12 1 12 1 12s0 3.88.46 5.58a2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95C23 15.88 23 12 23 12s0-3.88-.46-5.58z"/><polygon fill="currentColor" stroke="none" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; 2025 Stackly Fashion Store. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a><span>·</span><a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/blog.js"></script>
+    <script src="../js/cart-helper.js"></script>
+</html>
+
+

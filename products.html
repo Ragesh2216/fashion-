@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exquisite Collection - STACKLY Fashion Store</title>
+    <meta name="description" content="Browse our curations of high-end tailoring, premium fabrics, and bespoke custom fitting apparel.">
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit & Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/loading.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="page-scroll-indicator"></div>
+    </div>
+
+    <!-- Main Outer Wrapper -->
+    <div class="site-wrapper" id="page-wrapper-container">
+
+        <!-- Floating Pill-Shaped Navbar Header -->
+        <header class="navbar-wrapper reveal-fade" id="products-navbar">
+            <div class="navbar-pill" id="navbar-pill-element">
+                <a href="index.html" class="navbar-brand">
+                    <!-- Brand Logo Image -->
+                    <img src="../assets/home/stackly-logo.webp" alt="STACKLY Logo" class="brand-logo-img">
+                </a>
+                
+                <nav class="navbar-links" id="main-nav-links">
+                    <a href="index.html" class="nav-item" id="nav-item-home">Home</a>
+                    <a href="about.html" class="nav-item" id="nav-item-about">About us</a>
+                    <a href="service.html" class="nav-item" id="nav-item-services">Service</a>
+                    <a href="products.html" class="nav-item active" id="nav-item-products">Products</a>
+                    <a href="blog.html" class="nav-item" id="nav-item-blog">Blog</a>
+                    <a href="contact.html" class="nav-item" id="nav-item-contact">Contact</a>
+                    <!-- Mobile Nav Actions -->
+                    <div class="mobile-nav-actions">
+                        <a href="cart.html" class="btn-mobile-cart" style="color: var(--primary-dark); font-weight: 600; margin-bottom: 10px; display: block; text-decoration: none;"><i class="fa-solid fa-bag-shopping"></i> Cart</a>
+                        <a href="login.html" class="btn-login">Login</a>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </nav>
+
+                <div class="navbar-actions">
+                    <a href="cart.html" class="btn-cart-nav" id="btn-navbar-cart" aria-label="View Cart" style="position: relative; margin-right: 20px; color: var(--primary-dark); font-size: 1.25rem; display: inline-flex; align-items: center; text-decoration: none; transition: var(--transition-quick);">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-badge" id="nav-cart-count" style="position: absolute; top: -8px; right: -10px; background-color: var(--primary); color: white; border-radius: 50%; width: 16px; height: 16px; display: none; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700;">0</span>
+                    </a>
+                    <a href="login.html" class="btn-login" id="btn-navbar-login">Login</a>
+                    <a href="signup.html" class="btn-signup" id="btn-navbar-signup">Signup</a>
+                    
+                    <button class="menu-hamburger" id="nav-menu-hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Products Hero Section -->
+        <section class="products-hero">
+            <h1 class="products-hero-title reveal-fade">The Autumn Collection</h1>
+            <p class="products-hero-subtitle reveal-fade" style="animation-delay: 0.1s;">Uncompromising quality, premium craftsmanship, and custom fittings tailored to your profile.</p>
+        </section>
+
+        <!-- Controls Bar -->
+        <section class="products-control-bar reveal-fade" style="animation-delay: 0.2s;">
+            <!-- Search -->
+            <div class="products-search-wrap">
+                <i class="fa-solid fa-magnifying-glass products-search-icon"></i>
+                <input type="text" id="search-input" class="products-search-input" placeholder="Search the collection...">
+            </div>
+
+            <!-- Categories -->
+            <div class="products-filters" id="category-filters">
+                <button class="filter-pill active" data-category="all">All</button>
+                <button class="filter-pill" data-category="Suits">Bespoke Suits</button>
+                <button class="filter-pill" data-category="Dresses">Dresses</button>
+                <button class="filter-pill" data-category="Outerwear">Outerwear</button>
+                <button class="filter-pill" data-category="Accessories">Accessories</button>
+                <button class="filter-pill" data-category="Shoes">Shoes</button>
+            </div>
+
+            <!-- Sorting -->
+            <div class="products-sort-wrap">
+                <label for="sort-select" class="products-sort-label">Sort by</label>
+                <select id="sort-select" class="products-sort-select">
+                    <option value="default">Featured</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="likes-desc">Popularity</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Products Showcase Grid -->
+        <section class="products-container">
+            <div class="products-grid" id="products-grid">
+                <!-- Products dynamically injected here -->
+                
+                <!-- Empty Grid State -->
+                <div class="products-empty-state" id="products-empty-state">
+                    <i class="fa-solid fa-store-slash products-empty-icon"></i>
+                    <h3 class="products-empty-title">No garments found</h3>
+                    <p class="products-empty-desc">We couldn't find any products matching your selection. Try adjusting your filters or search term.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="site-footer" id="site-footer">
+            <div class="footer-bg-anim"></div>
+            <div class="footer-inner">
+                <div class="footer-col footer-brand-col">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="../assets/home/stackly-logo.webp" alt="STACKLY Logo" class="footer-logo">
+                    </a>
+                    <p class="footer-tagline">At Stackly, we deliver refined styling and custom-fit apparel focused on quality, craftsmanship, and timeless design.</p>
+                    <div class="footer-contact-details">
+                        <a href="tel:+18005551234" class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+                            +1 (800) 555-4321
+                        </a>
+                        <a href="mailto:concierge@stackly.com" class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            concierge@stackly.com
+                        </a>
+                    </div>
+                </div>
+                            <div class="footer-col footer-office-col">
+                <h4 class="footer-col-title">Office</h4>
+                <address class="footer-address">
+                    Salem Shop,<br>
+                    MMR Complex, Chinna Thirupathi,<br>
+                    near Chinna Muniyappan Kovil,<br>
+                    Salem, Tamil Nadu 636008
+                </address>
+                <!-- Embedded Google Map -->
+                <div class="footer-map" style="margin-top: 12px; border-radius: 8px; overflow: hidden; height: 100px; border: 1px solid rgba(255,255,255,0.1);">
+                    <iframe src="https://maps.google.com/maps?q=MMR%20Complex,%20Chinna%20Thirupathi,%20near%20Chinna%20Muniyappan%20Kovil,%20Salem,%20Tamil%20Nadu%20636008&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+                <div class="footer-col footer-links-col">
+                    <h4 class="footer-col-title">Links</h4>
+                    <nav class="footer-nav">
+                        <a href="index.html" class="footer-nav-link">Home</a>
+                        <a href="about.html" class="footer-nav-link">About us</a>
+                        <a href="service.html" class="footer-nav-link">Service</a>
+                        <a href="products.html" class="footer-nav-link">Products</a>
+                        <a href="blog.html" class="footer-nav-link">Blog</a>
+                        <a href="contact.html" class="footer-nav-link">Contact</a>
+                        <a href="login.html" class="footer-nav-link">Login</a>
+                        <a href="signup.html" class="footer-nav-link">Signup</a>
+                    </nav>
+                </div>
+                <div class="footer-col footer-social-col">
+                    <h4 class="footer-col-title">Follow us</h4>
+                    <div class="footer-social-icons">
+                        <a href="404.html" class="footer-social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="404.html" class="footer-social-btn" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                        <a href="404.html" class="footer-social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                        <a href="404.html" class="footer-social-btn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96C1 8.12 1 12 1 12s0 3.88.46 5.58a2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95C23 15.88 23 12 23 12s0-3.88-.46-5.58z"/><polygon fill="currentColor" stroke="none" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2025 Stackly Fashion Store. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a><span>·</span><a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- end .site-wrapper -->
+
+    <script src="../js/cart-helper.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/loading.js"></script>
+</body>
+</html>

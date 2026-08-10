@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - STACKLY fashion store</title>
+    <meta name="description" content="Secure login to Stackly Fashion Studio. Access client style profiles, sizing details, and custom coordinates.">
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/loading.css">
+</head>
+<body class="login-page">
+
+    <!-- Scroll Progress Indicator Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="page-scroll-indicator"></div>
+    </div>
+
+    <!-- Main Outer Wrapper -->
+    <div class="site-wrapper" id="page-wrapper-container">
+        
+        <!-- Floating Pill-Shaped Navbar Header -->
+        <header class="navbar-wrapper">
+            <div class="navbar-pill" id="navbar-pill-element">
+                <a href="index.html" class="navbar-brand" id="stackly-logo-home">
+                    <!-- Brand Logo Image (stackly-logo.webp) -->
+                    <img src="../assets/home/stackly-logo.webp" alt="STACKLY Logo" class="brand-logo-img">
+                </a>
+                
+                                <nav class="navbar-links" id="main-nav-links">
+                    <a href="index.html" class="nav-item " id="nav-item-home">Home</a>
+                    <a href="about.html" class="nav-item " id="nav-item-about">About us</a>
+                    <a href="service.html" class="nav-item " id="nav-item-services">Service</a>
+                    <a href="products.html" class="nav-item " id="nav-item-products">Products</a>
+                    <a href="blog.html" class="nav-item " id="nav-item-blog">Blog</a>
+                    <a href="contact.html" class="nav-item " id="nav-item-contact">Contact</a>
+                    <!-- Mobile Nav Actions -->
+                    <div class="mobile-nav-actions">
+                        <a href="cart.html" class="btn-mobile-cart" style="color: var(--primary-dark); font-weight: 600; margin-bottom: 10px; display: block; text-decoration: none;"><i class="fa-solid fa-bag-shopping"></i> Cart</a>
+                        <a href="login.html" class="btn-login">Login</a>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </nav>
+
+                                <div class="navbar-actions">
+                    <a href="cart.html" class="btn-cart-nav" id="btn-navbar-cart" aria-label="View Cart" style="position: relative; margin-right: 20px; color: var(--primary-dark); font-size: 1.25rem; display: inline-flex; align-items: center; text-decoration: none; transition: var(--transition-quick);">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-badge" id="nav-cart-count" style="position: absolute; top: -8px; right: -10px; background-color: var(--primary); color: white; border-radius: 50%; width: 16px; height: 16px; display: none; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700;">0</span>
+                    </a>
+                    <a href="login.html" class="btn-login" id="btn-navbar-login" style="background: var(--primary); color: #ffffff;">Login</a>
+                    <a href="signup.html" class="btn-signup" id="btn-navbar-signup">Signup</a>
+                    
+                    <button class="menu-hamburger" id="nav-menu-hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Authentication Area -->
+        <section class="auth-main-section">
+            <div class="auth-grid">
+                
+                <!-- Left Column: Visual Area -->
+                <div class="auth-info-col reveal-fade-right">
+                    <span class="auth-eyebrow">
+                        <span class="auth-eyebrow-dot"></span>
+                        SECURE ACCESS
+                    </span>
+                    <h2 class="auth-main-heading">Welcome back to<br><span>Stackly Fashion Studio</span></h2>
+                    <p class="auth-main-desc">Access your personal style profiles, order history, tailoring measurements, and exclusive styling recommendations.</p>
+                    
+                    <!-- stylist Image Card with Parallax and Float chips -->
+                    <div class="auth-img-frame">
+                        <img src="../assets/auth/login_designer.webp" alt="Smiling stylist designer" class="auth-image-inner">
+                        
+                        <!-- Chip 1: Secure Server -->
+                        <div class="auth-float-chip auth-chip-top-right">
+                            <span class="auth-chip-icon"><i class="fa-solid fa-lock"></i></span>
+                            <div class="auth-chip-details">
+                                <p>SSL Secure</p>
+                                <span>256-bit Encrypted</span>
+                            </div>
+                        </div>
+ 
+                        <!-- Chip 2: Quick Support -->
+                        <div class="auth-float-chip auth-chip-bottom-left">
+                            <span class="auth-chip-icon"><i class="fa-solid fa-scissors"></i></span>
+                            <div class="auth-chip-details">
+                                <p>Quick Support</p>
+                                <span>Always Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Glassmorphic Card -->
+                <div class="auth-form-wrapper reveal-fade-left">
+                    <div class="auth-card-glow" aria-hidden="true"></div>
+                    <div class="auth-form-card">
+                        
+                        <!-- Switch Tabs (User / Admin) -->
+                        <div class="auth-tabs-container">
+                            <div class="auth-tabs">
+                                <button type="button" class="auth-tab active" data-role="user">Fashion Studio Club Login</button>
+                                <button type="button" class="auth-tab" data-role="admin">Admin Login</button>
+                                <div class="auth-tab-slider"></div>
+                            </div>
+                        </div>
+
+                        <form id="stackly-auth-form" data-redirect="dashboard.html" data-loading-text="Logging in..." autocomplete="on">
+                            <!-- Hidden Field Tracking Active Role -->
+                            <input type="hidden" name="role" id="input-role" value="user">
+
+                            <div class="form-row">
+                                <!-- Email Input Group -->
+                                <div class="form-group">
+                                    <label class="form-label role-dynamic-text" for="input-email" data-user-label="client Email Address" data-admin-label="Administrator Email Address">client Email Address</label>
+                                    <input type="email" class="form-input" id="input-email" placeholder="username@gmail.com" required autocomplete="email">
+                                    <div class="error-message">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                        </svg>
+                                        <span class="error-text">Please enter a valid @gmail.com email.</span>
+                                    </div>
+                                </div>
+
+                                <!-- Password Input Group with Eye option -->
+                                <div class="form-group">
+                                    <label class="form-label" for="input-password">Password</label>
+                                    <div class="password-input-wrapper">
+                                        <input type="password" class="form-input" id="input-password" placeholder="••••••••" required autocomplete="current-password">
+                                        <button type="button" class="btn-eye-toggle" aria-label="Toggle Password Visibility">
+                                            <!-- SVG Eye Open -->
+                                            <svg class="icon-eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                            <!-- SVG Eye Closed (hidden by default) -->
+                                            <svg class="icon-eye-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                                                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                                                <line x1="1" y1="1" x2="23" y2="23"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="error-message">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                        </svg>
+                                        <span class="error-text">Please fill in this field.</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Form Action Button -->
+                            <div class="form-actions">
+                                <button type="submit" class="btn-form-submit" data-loading-text="Logging in...">
+                                    <span>Login to Account</span>
+                                </button>
+                            </div>
+
+                            <!-- Registration Switcher Text -->
+                            <div class="auth-subtext">
+                                Don't have an account?<a href="signup.html">Sign up</a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer" id="site-footer">
+        <div class="footer-bg-anim"></div>
+        <div class="footer-inner">
+
+            <!-- Col 1: Brand -->
+            <div class="footer-col footer-brand-col">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="../assets/home/stackly-logo.webp" alt="Stackly Logo" class="footer-logo">
+                </a>
+                <p class="footer-tagline">At Stackly, we deliver refined styling and custom-fit apparel focused on quality, craftsmanship, and timeless design.</p>
+                <div class="footer-contact-details">
+                    <a href="tel:+18005551234" class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+                        +1 (800) 555-4321
+                    </a>
+                    <a href="mailto:concierge@stackly.com" class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        concierge@stackly.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- Col 2: Office -->
+                        <div class="footer-col footer-office-col">
+                <h4 class="footer-col-title">Office</h4>
+                <address class="footer-address">
+                    Salem Shop,<br>
+                    MMR Complex, Chinna Thirupathi,<br>
+                    near Chinna Muniyappan Kovil,<br>
+                    Salem, Tamil Nadu 636008
+                </address>
+                <!-- Embedded Google Map -->
+                <div class="footer-map" style="margin-top: 12px; border-radius: 8px; overflow: hidden; height: 100px; border: 1px solid rgba(255,255,255,0.1);">
+                    <iframe src="https://maps.google.com/maps?q=MMR%20Complex,%20Chinna%20Thirupathi,%20near%20Chinna%20Muniyappan%20Kovil,%20Salem,%20Tamil%20Nadu%20636008&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Col 3: Links -->
+            <div class="footer-col footer-links-col">
+                <h4 class="footer-col-title">Links</h4>
+                <nav class="footer-nav">
+                    <a href="index.html" class="footer-nav-link">Home</a>
+                    <a href="about.html" class="footer-nav-link">About us</a>
+                    <a href="service.html" class="footer-nav-link">Service</a>
+                    <a href="blog.html" class="footer-nav-link">Blog</a>
+                    <a href="contact.html" class="footer-nav-link">Contact</a>
+                    <a href="login.html" class="footer-nav-link">Login</a>
+                    <a href="signup.html" class="footer-nav-link">Signup</a>
+                </nav>
+            </div>
+
+            <!-- Col 4: Follow Us -->
+            <div class="footer-col footer-social-col">
+                <h4 class="footer-col-title">Follow us</h4>
+                <div class="footer-social-icons">
+                    <a href="404.html" class="footer-social-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96C1 8.12 1 12 1 12s0 3.88.46 5.58a2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95C23 15.88 23 12 23 12s0-3.88-.46-5.58z"/><polygon fill="currentColor" stroke="none" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; 2025 Stackly Fashion Store. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <span>·</span>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Success Toast Popup -->
+    <div class="success-toast" id="success-toast-message">
+        <span class="success-toast-icon"><i class="fa-solid fa-check"></i></span>
+        <span class="success-toast-text">Login Successful! Welcome back.</span>
+    </div>
+
+    <!-- Link JS script -->
+    <script src="../js/auth.js"></script>
+    <script src="../js/cart-helper.js"></script>
+    <script src="../js/loading.js"></script>
+</body>
+</html>
+
+

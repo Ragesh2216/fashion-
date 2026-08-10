@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - STACKLY fashion store</title>
+    <meta name="description" content="Explore Stackly's comprehensive fashion store services — from wardrobe consultations to bespoke styling designed to elevate your personal style at every season of life.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/service.css">
+    <link rel="stylesheet" href="../css/loading.css">
+</head>
+<body class="service-page">
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="page-scroll-indicator"></div>
+    </div>
+
+    <div class="site-wrapper">
+
+        <!-- ===== NAVBAR ===== -->
+        <header class="navbar-wrapper" id="service-navbar">
+            <div class="navbar-pill" id="navbar-pill-element">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../assets/home/stackly-logo.webp" alt="STACKLY Logo" class="brand-logo-img">
+                </a>
+                                <nav class="navbar-links" id="main-nav-links">
+                    <a href="index.html" class="nav-item " id="nav-item-home">Home</a>
+                    <a href="about.html" class="nav-item " id="nav-item-about">About us</a>
+                    <a href="service.html" class="nav-item active" id="nav-item-services">Service</a>
+                    <a href="products.html" class="nav-item " id="nav-item-products">Products</a>
+                    <a href="blog.html" class="nav-item " id="nav-item-blog">Blog</a>
+                    <a href="contact.html" class="nav-item " id="nav-item-contact">Contact</a>
+                    <!-- Mobile Nav Actions -->
+                    <div class="mobile-nav-actions">
+                        <a href="cart.html" class="btn-mobile-cart" style="color: var(--primary-dark); font-weight: 600; margin-bottom: 10px; display: block; text-decoration: none;"><i class="fa-solid fa-bag-shopping"></i> Cart</a>
+                        <a href="login.html" class="btn-login">Login</a>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </nav>
+                                <div class="navbar-actions">
+                    <a href="cart.html" class="btn-cart-nav" id="btn-navbar-cart" aria-label="View Cart" style="position: relative; margin-right: 20px; color: var(--primary-dark); font-size: 1.25rem; display: inline-flex; align-items: center; text-decoration: none; transition: var(--transition-quick);">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-badge" id="nav-cart-count" style="position: absolute; top: -8px; right: -10px; background-color: var(--primary); color: white; border-radius: 50%; width: 16px; height: 16px; display: none; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700;">0</span>
+                    </a>
+                    <a href="login.html"  class="btn-login"  id="btn-navbar-login">Login</a>
+                    <a href="signup.html" class="btn-signup" id="btn-navbar-signup">Signup</a>
+                    <button class="menu-hamburger" id="nav-menu-hamburger"
+                            aria-label="Toggle Navigation Menu" aria-expanded="false">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===== SERVICE HERO SECTION ===== -->
+        <section class="service-hero" id="service-hero">
+
+            <!-- Full background image with tinted overlay -->
+            <div class="sh-bg" aria-hidden="true">
+                <div class="sh-bg-img"></div>
+                <div class="sh-bg-overlay"></div>
+                <!-- Floating animated particles -->
+                <div class="sh-particle sh-p1"></div>
+                <div class="sh-particle sh-p2"></div>
+                <div class="sh-particle sh-p3"></div>
+                <div class="sh-particle sh-p4"></div>
+                <div class="sh-particle sh-p5"></div>
+                <div class="sh-particle sh-p6"></div>
+            </div>
+
+            <div class="sh-inner">
+
+                <!-- LEFT: Text content -->
+                <div class="sh-left">
+
+                    <!-- Animated tagline -->
+                    <div class="sh-tagline" id="sh-tagline">
+                        <span class="sh-tag-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                        </span>
+                        <span>Our fashion services</span>
+                    </div>
+
+                    <!-- Main heading — each word animates in -->
+                    <h1 class="sh-heading" id="sh-heading">
+                        <span class="sh-word sh-word-1">Comprehensive</span>
+                        <span class="sh-word sh-word-2 sh-word-accent">fashion store</span>
+                        <span class="sh-word sh-word-3">Services You</span>
+                        <span class="sh-word sh-word-4">Can Trust</span>
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="sh-desc" id="sh-desc">
+                        From seasonal coordinates to advanced bespoke tailoring, Stackly Fashion Store
+                        provides expert styling services designed to support your style
+                        at every stage of life.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="sh-btns" id="sh-btns">
+                        <a href="404.html" class="sh-btn-primary">
+                            Explore Services
+                            <span class="sh-btn-arrow">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </span>
+                        </a>
+                        <a href="404.html" class="sh-btn-outline">Book Fitting</a>
+                    </div>
+
+                    <!-- Trust badges row -->
+                    <div class="sh-trust-row" id="sh-trust-row">
+                        <div class="sh-trust-badge">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <span>ISO Certified</span>
+                        </div>
+                        <div class="sh-trust-sep"></div>
+                        <div class="sh-trust-badge">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                            <span>1,200+ stylists</span>
+                        </div>
+                        <div class="sh-trust-sep"></div>
+                        <div class="sh-trust-badge">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            <span>98% Satisfaction</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: Hero image -->
+                <div class="sh-right" id="sh-right">
+
+                    <!-- Floating glow ring behind image -->
+                    <div class="sh-img-glow-ring"></div>
+
+                    <!-- Main image card -->
+                    <div class="sh-img-card">
+                        <img
+                            src="../assets/img_16.webp"
+                            alt="Stackly comprehensive fashion store services"
+                            class="sh-hero-img"
+                            id="sh-hero-img"
+                        >
+                        <!-- Scan line animation overlay -->
+                        <div class="sh-scan-line" aria-hidden="true"></div>
+                        <!-- Corner brackets -->
+                        <div class="sh-corner sh-corner-tl" aria-hidden="true"></div>
+                        <div class="sh-corner sh-corner-tr" aria-hidden="true"></div>
+                        <div class="sh-corner sh-corner-bl" aria-hidden="true"></div>
+                        <div class="sh-corner sh-corner-br" aria-hidden="true"></div>
+                    </div>
+
+                    <!-- Floating stat chip — top left -->
+                    <div class="sh-float-chip sh-chip-tl" id="sh-chip-tl">
+                        <span class="sh-chip-num">500+</span>
+                        <span class="sh-chip-label">Fashion Partners</span>
+                    </div>
+
+                    <!-- Floating stat chip — bottom right -->
+                    <div class="sh-float-chip sh-chip-br" id="sh-chip-br">
+                        <span class="sh-chip-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </span>
+                        <div>
+                            <p class="sh-chip-stat">15+ Years</p>
+                            <p class="sh-chip-sub">sartorial Excellence</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+         </section>
+
+        <!-- ===== PRIMARY CARE + SPECIALIST SECTION ===== -->
+        <section class="svc-main-section" id="services-list">
+            <div class="svc-inner">
+
+                <!-- ===== PART 1: Primary Care ===== -->
+                <div class="svc-primary-block">
+
+                    <!-- Header -->
+                    <div class="svc-header" id="svc-header">
+                        <span class="svc-eyebrow">
+                            <span class="svc-eyebrow-dot"></span>
+                            Primary Care
+                        </span>
+                        <h2 class="svc-heading">
+                            <span class="svc-hline svc-hline-1">Complete <em class="svc-accent">Care</em> for</span>
+                            <span class="svc-hline svc-hline-2">Every Stage of Life</span>
+                        </h2>
+                        <p class="svc-subtext">
+                            Our primary care team provides preventive services, early diagnosis, and
+                            continuous style curation to keep you and your family healthy.
+                        </p>
+                    </div>
+
+                    <!-- 3 Cards Row -->
+                    <div class="svc-primary-grid">
+
+                        <!-- Card 1 -->
+                        <div class="svc-pcard" style="--pc-delay:0.1s">
+                            <div class="svc-pcard-icon">
+                                <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div class="svc-pcard-body">
+                                <h3>Routine Checkups</h3>
+                                <p>Comprehensive wardrobe reviews to design and align your personal collections.</p>
+                            </div>
+                            <a href="404.html" class="svc-pcard-arrow" aria-label="Learn more">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                            <div class="svc-pcard-bar"></div>
+                        </div>
+
+                        <!-- Card 2 — featured -->
+                        <div class="svc-pcard svc-pcard-featured" style="--pc-delay:0.22s">
+                            <div class="svc-pcard-icon">
+                                <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    <polyline points="12 8 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <div class="svc-pcard-body">
+                                <h3>Chronic Disease Care</h3>
+                                <p>Comprehensive wardrobe reviews to design and align your personal collections.</p>
+                            </div>
+                            <a href="404.html" class="svc-pcard-arrow" aria-label="Learn more">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                            <div class="svc-pcard-bar"></div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="svc-pcard" style="--pc-delay:0.34s">
+                            <div class="svc-pcard-icon">
+                                <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M9 12l2 2 4-4"/>
+                                </svg>
+                            </div>
+                            <div class="svc-pcard-body">
+                                <h3>Preventive Services</h3>
+                                <p>Vaccinations, screenings, and early detection programs for long-term protection.</p>
+                            </div>
+                            <a href="404.html" class="svc-pcard-arrow" aria-label="Learn more">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                            <div class="svc-pcard-bar"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ===== PART 2: Specialist Consultation ===== -->
+                <div class="svc-specialist-block" id="svc-specialist-block">
+
+                    <!-- LEFT: text panel -->
+                    <div class="svc-spec-left">
+                        <span class="svc-spec-eyebrow">Specialist Consultation</span>
+                        <h2 class="svc-spec-heading">
+                            Expert Care from <em class="svc-accent">Trusted</em><br>
+                            fashion Specialists
+                        </h2>
+                        <p class="svc-spec-desc">
+                            Our studio provides comprehensive specialist consultation services with
+                            advanced design systems and highly experienced stylists. We focus on
+                            personalized styling consultations to ensure the best possible client outcomes.
+                        </p>
+                        <ul class="svc-spec-list">
+                            <li>
+                                <span class="svc-spec-check">
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                Advanced fashion Technology
+                            </li>
+                            <li>
+                                <span class="svc-spec-check">
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                Experienced Specialist stylists
+                            </li>
+                            <li>
+                                <span class="svc-spec-check">
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                Personalized Styling Consultations
+                            </li>
+                            <li>
+                                <span class="svc-spec-check">
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                Dedicated Client Care
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- RIGHT: 2×2 specialist cards grid -->
+                    <div class="svc-spec-right">
+
+                        <div class="svc-spec-card" style="--sc-delay:0.1s">
+                            <div class="svc-spec-icon">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                            </div>
+                            <h4>Cardiology</h4>
+                            <p>Cardiology is dedicated to blood vessel, epilepsy, migraines, and conditions.</p>
+                        </div>
+
+                        <div class="svc-spec-card" style="--sc-delay:0.2s">
+                            <div class="svc-spec-icon">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                            </div>
+                            <h4>Neurology</h4>
+                            <p>Our experienced neurologists treat complex neurological disorders.</p>
+                        </div>
+
+                        <div class="svc-spec-card" style="--sc-delay:0.3s">
+                            <div class="svc-spec-icon">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+                            </div>
+                            <h4>Orthopedics</h4>
+                            <p>Our orthopedic specialists treat joint and spine disorders with advanced care.</p>
+                        </div>
+
+                        <div class="svc-spec-card" style="--sc-delay:0.4s">
+                            <div class="svc-spec-icon">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <h4>Chronic Disease Care</h4>
+                            <p>General apparel provides comprehensive care for a wide range of acute and chronic conditions.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== SECTION 1: Advanced Designer apparels ===== -->
+        <section class="svc-devices-section" id="svc-devices">
+            <div class="svc-devices-inner">
+
+                <!-- Row 1: text left, image right -->
+                <div class="svc-devices-row svc-devices-row-1" id="svc-dev-row1">
+                    <div class="svc-dev-text">
+                        <span class="svc-dev-eyebrow">fashion Innovation</span>
+                        <h2 class="svc-dev-heading">
+                            <span class="svc-dev-hline">Advanced <em class="svc-dev-accent">Designer apparels</em></span>
+                            <span class="svc-dev-hline">&amp; fashion store Solutions</span>
+                        </h2>
+                        <p class="svc-dev-desc">
+                            Stackly fashion delivers innovative styling systems and high-quality Designer apparels
+                            designed to improve client care, fit accuracy, and sartorial efficiency. Our solutions
+                            support boutiques, retail spaces, and fashion designers with reliable and modern apparel.
+                        </p>
+                        <p class="svc-dev-desc">
+                            From digital patterns to custom fitting devices, Stackly focuses on quality, precision,
+                            and performance, ensuring fashion store providers can deliver better outcomes through advanced
+                            fashion innovation.
+                        </p>
+                        <a href="404.html" class="svc-dev-btn">
+                            Explore Devices
+                            <span class="svc-dev-btn-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="svc-dev-img-col">
+                        <div class="svc-dev-img-frame" data-tilt>
+                            <img src="../assets/img_17.webp" alt="Advanced fashion technology" class="svc-dev-img">
+                            <div class="svc-dev-img-glow"></div>
+                            <div class="svc-dev-corner svc-dev-corner-tl"></div>
+                            <div class="svc-dev-corner svc-dev-corner-br"></div>
+                        </div>
+                        <!-- Floating chip -->
+                        <div class="svc-dev-chip">
+                            <span class="svc-dev-chip-dot"></span>
+                            <span>ISO Certified Technology</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: image left, text right -->
+                <div class="svc-devices-row svc-devices-row-2" id="svc-dev-row2">
+                    <div class="svc-dev-img-col">
+                        <div class="svc-dev-img-frame" data-tilt>
+                            <img src="../assets/img_34.webp" alt="fashion store innovation" class="svc-dev-img">
+                            <div class="svc-dev-img-glow"></div>
+                            <div class="svc-dev-corner svc-dev-corner-tl"></div>
+                            <div class="svc-dev-corner svc-dev-corner-br"></div>
+                        </div>
+                        <!-- Floating stat -->
+                        <div class="svc-dev-chip svc-dev-chip-stat">
+                            <span class="svc-dev-chip-num">500+</span>
+                            <span class="svc-dev-chip-label">Devices Deployed</span>
+                        </div>
+                    </div>
+                    <div class="svc-dev-text">
+                        <span class="svc-dev-eyebrow">client-First Approach</span>
+                        <h2 class="svc-dev-heading">
+                            <span class="svc-dev-hline">Enhance fashion store with <em class="svc-dev-accent">innovation.</em></span>
+                            <span class="svc-dev-hline">Delivering advanced fashion solutions</span>
+                            <span class="svc-dev-hline">to improve client care daily</span>
+                        </h2>
+                        <p class="svc-dev-desc">
+                            Stackly is dedicated to providing expert, client-focused fashion store,
+                            ensuring each service is delivered with compassion, innovation, and
+                            a commitment to your well-being.
+                        </p>
+                        <div class="svc-dev-features">
+                            <div class="svc-dev-feature">
+                                <span class="svc-dev-feature-dot"></span>
+                                Real-time styling consultation updates
+                            </div>
+                            <div class="svc-dev-feature">
+                                <span class="svc-dev-feature-dot"></span>
+                                AI-powered design precision
+                            </div>
+                            <div class="svc-dev-feature">
+                                <span class="svc-dev-feature-dot"></span>
+                                Seamless sartorial workflow integration
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== SECTION 2: Trusted fashion store & fashion Solutions ===== -->
+        <section class="svc-trusted-section" id="svc-trusted">
+            <div class="svc-trusted-inner">
+
+                <!-- Section header -->
+                <div class="svc-trusted-header" id="svc-trusted-header">
+                    <span class="svc-trusted-eyebrow">Redefining Modern fashion store</span>
+                    <h2 class="svc-trusted-heading">
+                        <span class="svc-th-line">We deliver trusted</span>
+                        <span class="svc-th-line">fashion store &amp; fashion solutions</span>
+                    </h2>
+                    <div class="svc-trusted-bar"></div>
+                </div>
+
+                <!-- 3 image cards -->
+                <div class="svc-trusted-grid">
+
+                    <div class="svc-trusted-card" id="svc-tc-1">
+                        <div class="svc-tc-img-wrap">
+                            <img src="../assets/img_6.webp" alt="Designer apparels" class="svc-tc-img">
+                            <div class="svc-tc-img-overlay"></div>
+                        </div>
+                        <div class="svc-tc-body">
+                            <h3>Designer apparels</h3>
+                             <p>Smart sizing systems improving fit quality and tailoring accuracy</p>
+                        </div>
+                        <div class="svc-tc-number">01</div>
+                    </div>
+
+                    <div class="svc-trusted-card svc-trusted-card-featured" id="svc-tc-2">
+                        <div class="svc-tc-img-wrap">
+                            <img src="../assets/img_7.webp" alt="fashion store insights" class="svc-tc-img">
+                            <div class="svc-tc-img-overlay"></div>
+                        </div>
+                        <div class="svc-tc-body">
+                            <h3>Fashion Insights</h3>
+                             <p>Advanced styling technologies transforming sartorial decision making</p>
+                        </div>
+                        <div class="svc-tc-number">02</div>
+                    </div>
+
+                    <div class="svc-trusted-card" id="svc-tc-3">
+                        <div class="svc-tc-img-wrap">
+                            <img src="../assets/img_9.webp" alt="fashion support" class="svc-tc-img">
+                            <div class="svc-tc-img-overlay"></div>
+                        </div>
+                        <div class="svc-tc-body">
+                            <h3>fashion Support</h3>
+                             <p>Enhancing stylist-client communication using modern digital styling platforms</p>
+                        </div>
+                        <div class="svc-tc-number">03</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECTION 3: FAQ ===== -->
+        <section class="svc-faq-section" id="svc-faq">
+            <div class="svc-faq-inner">
+
+                <!-- Decorative blobs -->
+                <div class="svc-faq-blob svc-faq-blob-1" aria-hidden="true"></div>
+                <div class="svc-faq-blob svc-faq-blob-2" aria-hidden="true"></div>
+
+                <div class="svc-faq-content">
+                    <!-- Header -->
+                    <div class="svc-faq-header" id="svc-faq-header">
+                        <h2 class="svc-faq-heading">Frequently Asked Questions</h2>
+                        <p class="svc-faq-subtext">Find answers to common fashion store queries</p>
+                    </div>
+
+                    <!-- Accordion -->
+                    <div class="svc-faq-list" id="svc-faq-list">
+
+                        <div class="svc-faq-item" data-faq="0">
+                            <button class="svc-faq-q" aria-expanded="false">
+                                <span>What services does your fashion store provide?</span>
+                                <span class="svc-faq-icon">
+                                    <svg class="svc-faq-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    <svg class="svc-faq-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                </span>
+                            </button>
+                            <div class="svc-faq-a">
+                                <p>We offer a full spectrum of fashion store services including custom fittings, wardrobe audits, personal styling, and bespoke tailoring. Our professional styling team ensures a perfect fit for every client.</p>
+                            </div>
+                        </div>
+
+                        <div class="svc-faq-item" data-faq="1">
+                            <button class="svc-faq-q" aria-expanded="false">
+                                <span>How can I book an appointment?</span>
+                                <span class="svc-faq-icon">
+                                    <svg class="svc-faq-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    <svg class="svc-faq-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                </span>
+                            </button>
+                            <div class="svc-faq-a">
+                                <p>You can book a styling consultation online through our website, call our 24/7 helpline, or visit our studio directly. We also offer same-day appointments for custom fittings and virtual styling consultations for your convenience.</p>
+                            </div>
+                        </div>
+
+                        <div class="svc-faq-item" data-faq="2">
+                            <button class="svc-faq-q" aria-expanded="false">
+                                <span>Do you offer express tailoring services?</span>
+                                <span class="svc-faq-icon">
+                                    <svg class="svc-faq-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    <svg class="svc-faq-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                </span>
+                            </button>
+                            <div class="svc-faq-a">
+                                <p>Yes, our express tailoring department can accommodate rush orders. We have a dedicated team of master tailors ready to respond to any style emergencies, such as last-minute wedding alterations or sudden fit adjustments, with speed and precision.</p>
+                            </div>
+                        </div>
+
+                        <div class="svc-faq-item" data-faq="3">
+                            <button class="svc-faq-q" aria-expanded="false">
+                                <span>Are fabric swatches and customizations available on-site?</span>
+                                <span class="svc-faq-icon">
+                                    <svg class="svc-faq-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    <svg class="svc-faq-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                </span>
+                            </button>
+                            <div class="svc-faq-a">
+                                <p>Absolutely. Our fully equipped design studio offers a comprehensive range of fabric swatches and customized trim options including premium lining, custom buttons, and thread colors. Most customization options can be viewed and touched during your styling consultation.</p>
+                            </div>
+                        </div>
+
+                        <div class="svc-faq-item" data-faq="4">
+                            <button class="svc-faq-q" aria-expanded="false">
+                                <span>Do you offer private showroom appointments?</span>
+                                <span class="svc-faq-icon">
+                                    <svg class="svc-faq-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    <svg class="svc-faq-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                </span>
+                            </button>
+                            <div class="svc-faq-a">
+                                <p>Yes. We offer exclusive, private showroom appointments where you can explore our latest collections with a dedicated personal stylist. During your private session, you will have the entire showroom to yourself for a truly bespoke, relaxed shopping experience.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div><!-- end .site-wrapper -->
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer" id="site-footer">
+        <div class="footer-bg-anim"></div>
+        <div class="footer-inner">
+
+            <!-- Col 1: Brand -->
+            <div class="footer-col footer-brand-col">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="../assets/home/stackly-logo.webp" alt="Stackly Logo" class="footer-logo">
+                </a>
+                <p class="footer-tagline">At Stackly, we deliver refined styling and custom-fit apparel focused on quality, craftsmanship, and timeless design.</p>
+                <div class="footer-contact-details">
+                    <a href="tel:+18005551234" class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+                        +1 (800) 555-4321
+                    </a>
+                    <a href="mailto:concierge@stackly.com" class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        concierge@stackly.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- Col 2: Office -->
+                        <div class="footer-col footer-office-col">
+                <h4 class="footer-col-title">Office</h4>
+                <address class="footer-address">
+                    Salem Shop,<br>
+                    MMR Complex, Chinna Thirupathi,<br>
+                    near Chinna Muniyappan Kovil,<br>
+                    Salem, Tamil Nadu 636008
+                </address>
+               <!-- Embedded Google Map -->
+                <div class="footer-map" style="margin-top: 12px; border-radius: 8px; overflow: hidden; height: 100px; border: 1px solid rgba(255,255,255,0.1);">
+                    <iframe src="https://maps.google.com/maps?q=MMR%20Complex,%20Chinna%20Thirupathi,%20near%20Chinna%20Muniyappan%20Kovil,%20Salem,%20Tamil%20Nadu%20636008&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Col 3: Links -->
+            <div class="footer-col footer-links-col">
+                <h4 class="footer-col-title">Links</h4>
+                <nav class="footer-nav">
+                    <a href="index.html" class="footer-nav-link">Home</a>
+                    <a href="about.html" class="footer-nav-link">About us</a>
+                    <a href="service.html" class="footer-nav-link">Service</a>
+                    <a href="blog.html" class="footer-nav-link">Blog</a>
+                    <a href="contact.html" class="footer-nav-link">Contact</a>
+                    <a href="login.html" class="footer-nav-link">Login</a>
+                    <a href="signup.html" class="footer-nav-link">Signup</a>
+                </nav>
+            </div>
+
+            <!-- Col 4: Follow Us -->
+            <div class="footer-col footer-social-col">
+                <h4 class="footer-col-title">Follow us</h4>
+                <div class="footer-social-icons">
+                    <a href="404.html" class="footer-social-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96C1 8.12 1 12 1 12s0 3.88.46 5.58a2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95C23 15.88 23 12 23 12s0-3.88-.46-5.58z"/><polygon fill="currentColor" stroke="none" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; 2025 Stackly Fashion Store. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <span>·</span>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/service.js"></script>
+    <script src="../js/cart-helper.js"></script>
+    <script src="../js/loading.js"></script>
+</body>
+</html>

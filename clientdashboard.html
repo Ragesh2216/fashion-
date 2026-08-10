@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard - STACKLY Fashion Studio</title>
+    <meta name="description" content="View your styling appointments, custom sizing profile, and exclusive designer recommendations.">
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-wrapper">
+        
+        <!-- ===== SIDEBAR NAVIGATION ===== -->
+        <aside class="dashboard-sidebar" id="sidebar-drawer">
+            <a href="index.html" class="db-sidebar-brand">
+                <img src="../assets/home/stackly-logo.webp" alt="STACKLY Logo" class="db-brand-logo">
+             
+            </a>
+            
+            <ul class="db-sidebar-menu">
+                <li class="db-menu-item active">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Style Profile</span>
+                    </a>
+                </li>
+                <li class="db-menu-item">
+                    <a href="404.html">
+                        <i class="fa-solid fa-scissors"></i>
+                        <span>My Fittings</span>
+                    </a>
+                </li>
+                <li class="db-menu-item">
+                    <a href="404.html">
+                        <i class="fa-solid fa-shirt"></i>
+                        <span>Curated Catalog</span>
+                    </a>
+                </li>
+                <li class="db-menu-item">
+                    <a href="404.html">
+                        <i class="fa-solid fa-comments"></i>
+                        <span>Message Stylist</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="db-sidebar-footer">
+                <div class="db-user-profile">
+                    <div class="db-avatar" id="client-avatar">C</div>
+                    <div class="db-user-info">
+                        <p id="client-name-display">Client Member</p>
+                        <span>Club Member</span>
+                    </div>
+                </div>
+                <a href="index.html" class="btn-db-logout" id="btn-logout-action">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Log Out</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- ===== MAIN CONTENT AREA ===== -->
+        <main class="dashboard-main">
+            
+            <!-- Top Navigation Bar -->
+            <header class="db-header">
+                <div class="db-menu-toggle" id="sidebar-hamburger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+                <div class="db-welcome-section" style="margin-bottom: 0;">
+                    <span class="db-eyebrow">Client Portal</span>
+                    <h1 class="db-title" id="welcome-client-title" style="font-size: 1.6rem; margin-top: 0;">Welcome, Styling Club Member</h1>
+                </div>
+                
+                <div class="db-header-actions">
+                </div>
+            </header>
+            
+            <!-- Metrics Cards Grid -->
+            <section class="db-stats-grid" style="margin-top: 32px;">
+                <!-- Card 1: Next Fitting -->
+                <div class="db-stat-card">
+                    <div class="db-stat-icon-wrapper">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <span class="db-stat-label">Next Fitting</span>
+                    <div class="db-stat-value" style="font-size: 1.35rem; margin: 12px 0 8px 0;">Aug 15, 2:00 PM</div>
+                    <span class="db-stat-growth positive">
+                        <span>Amara Sterling on Duty</span>
+                    </span>
+                </div>
+                
+                <!-- Card 2: Saved Looks -->
+                <div class="db-stat-card">
+                    <div class="db-stat-icon-wrapper">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <span class="db-stat-label">Saved Coordinates</span>
+                    <div class="db-stat-value">18 Looks</div>
+                    <span class="db-stat-growth positive">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span>+4 added recently</span>
+                    </span>
+                </div>
+                
+                <!-- Card 3: Stylist Messages -->
+                <div class="db-stat-card">
+                    <div class="db-stat-icon-wrapper">
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <span class="db-stat-label">Stylist Chat</span>
+                    <div class="db-stat-value">2 Unread</div>
+                    <span class="db-stat-growth positive" style="color: var(--primary);">
+                        <span>Response waiting</span>
+                    </span>
+                </div>
+                
+                <!-- Card 4: Tier Level -->
+                <div class="db-stat-card">
+                    <div class="db-stat-icon-wrapper">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <span class="db-stat-label">Club Tier</span>
+                    <div class="db-stat-value" style="font-size: 1.55rem;">Vanguard</div>
+                    <span class="db-stat-growth neutral">
+                        <span>Exclusive studio perks</span>
+                    </span>
+                </div>
+            </section>
+            
+            <!-- Bento Box: Profile & Sizing -->
+            <section class="db-bento-grid">
+                <!-- Left: Custom Sizing Profile -->
+                <div class="db-bento-card">
+                    <div class="db-bento-header">
+                        <h2 class="db-bento-title">My Custom Sizing Profile</h2>
+                        <span class="db-eyebrow" style="font-size: 0.72rem;">Last Updated Aug 01</span>
+                    </div>
+                    
+                    <form id="sizing-profile-form" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 16px;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label class="db-stat-label" style="display:block; margin-bottom:6px;">Height (cm)</label>
+                            <input type="number" class="db-search-input" value="176" style="padding: 10px 14px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label class="db-stat-label" style="display:block; margin-bottom:6px;">Chest Width (cm)</label>
+                            <input type="number" class="db-search-input" value="94" style="padding: 10px 14px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label class="db-stat-label" style="display:block; margin-bottom:6px;">Waist Circumference (cm)</label>
+                            <input type="number" class="db-search-input" value="78" style="padding: 10px 14px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label class="db-stat-label" style="display:block; margin-bottom:6px;">Inseam Length (cm)</label>
+                            <input type="number" class="db-search-input" value="82" style="padding: 10px 14px;">
+                        </div>
+                        <div class="form-group" style="grid-column: span 2; margin-bottom: 0;">
+                            <label class="db-stat-label" style="display:block; margin-bottom:6px;">Fit Preference</label>
+                            <select class="db-search-input" style="padding: 10px 14px; appearance: auto;">
+                                <option value="slim">Slim Fit (Structured Silhouette)</option>
+                                <option value="regular" selected>Regular Fit (Classic Silhouette)</option>
+                                <option value="relaxed">Relaxed Fit (Contemporary Casual)</option>
+                            </select>
+                        </div>
+                        
+                        <div style="grid-column: span 2; margin-top: 10px;">
+                            <button type="submit" class="btn-db-action-primary" style="width: 100%; justify-content: center; padding: 12px;">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                                <span>Save Measurements</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Right: Stylist Recommendations -->
+                <div class="db-bento-card" style="display:flex; flex-direction:column; justify-content:space-between;">
+                    <div class="db-bento-header" style="margin-bottom: 12px;">
+                        <h2 class="db-bento-title">Curated For You</h2>
+                    </div>
+                    
+                    <div style="display:flex; flex-direction:column; gap:16px;">
+                        <div class="db-stylist-row" style="border:1px solid rgba(255,133,152,0.15); padding:12px; border-radius:14px; background-color:rgba(255,133,152,0.03);">
+                            <div class="db-stylist-meta">
+                                <div class="db-stylist-avatar" style="background-color:rgba(255,133,152,0.15);"><i class="fa-solid fa-circle-check" style="color:var(--primary);"></i></div>
+                                <div class="db-stylist-name">
+                                    <p>Bohemian Autumn</p>
+                                    <span>Curated by Amara</span>
+                                </div>
+                            </div>
+                            <span class="db-eyebrow" style="font-size:0.7rem;">New</span>
+                        </div>
+                        
+                        <div class="db-stylist-row" style="border:1px solid rgba(255,133,152,0.15); padding:12px; border-radius:14px; background-color:rgba(255,133,152,0.03);">
+                            <div class="db-stylist-meta">
+                                <div class="db-stylist-avatar" style="background-color:rgba(255,133,152,0.15);"><i class="fa-solid fa-circle-check" style="color:var(--primary);"></i></div>
+                                <div class="db-stylist-name">
+                                    <p>Minimalist Tailoring</p>
+                                    <span>Curated by Devon</span>
+                                </div>
+                            </div>
+                            <span class="db-eyebrow" style="font-size:0.7rem; color:#888;">Saved</span>
+                        </div>
+                    </div>
+                    
+                    <a href="404.html" class="btn-db-action-primary" style="margin-top:16px; background-color:transparent; border:1px solid var(--primary); color:var(--primary); justify-content:center;">
+                        <span>Explore All Looks</span>
+                    </a>
+                </div>
+            </section>
+            
+            <!-- Table Section: Fitting History -->
+            <section class="db-table-card">
+                <div class="db-table-header">
+                    <h2 class="db-table-title">My Fitting & Custom order History</h2>
+                    <a href="404.html" class="btn-db-action-primary" style="text-decoration: none;">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Request Custom Fitting</span>
+                    </a>
+                </div>
+                
+                <div class="db-table-responsive">
+                    <table class="db-table">
+                        <thead>
+                            <tr>
+                                <th>Fitting Code</th>
+                                <th>Assigned Stylist</th>
+                                <th>Service Category</th>
+                                <th>Date Scheduled</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>#FT-10492</strong></td>
+                                <td>Amara Sterling</td>
+                                <td>Bespoke Fitting</td>
+                                <td>Aug 15, 2026</td>
+                                <td><span class="db-status-badge scheduled">Scheduled</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>#FT-10118</strong></td>
+                                <td>Harlan Kross</td>
+                                <td>Seasonal Styling Consult</td>
+                                <td>May 22, 2026</td>
+                                <td><span class="db-status-badge completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>#FT-09852</strong></td>
+                                <td>Devon Brooks</td>
+                                <td>Custom Suit Fitting</td>
+                                <td>Feb 14, 2026</td>
+                                <td><span class="db-status-badge completed">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- ===== Salem Studio Location Section ===== -->
+            <section class="db-bento-grid" style="margin-top: 24px;">
+                <div class="db-bento-card" style="grid-column: span 2;">
+                    <div class="db-bento-header">
+                        <h2 class="db-bento-title">Our Salem Boutique & Showroom Map</h2>
+                        <span class="db-eyebrow" style="font-size: 0.72rem;">Visit Us</span>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 24px; margin-top: 16px; align-items: center;">
+                        <div>
+                            <h3 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 8px;">Salem Flagship Studio</h3>
+                            <p style="font-family: var(--font-body); font-size: 0.9rem; color: var(--text-body); line-height: 1.5; margin-bottom: 12px;">
+                                MMR Complex, Chinna Thirupathi,<br>
+                                near Chinna Muniyappan Kovil,<br>
+                                Salem, Tamil Nadu 636008
+                            </p>
+                            <p style="font-family: var(--font-body); font-size: 0.85rem; color: var(--text-body);">
+                                <strong>Hours:</strong> Mon - Sat: 10:00 AM - 8:00 PM<br>
+                                <strong>Phone:</strong> +1 (800) 555-4321<br>
+                                <strong>Email:</strong> concierge@stackly.com
+                            </p>
+                        </div>
+                        <div style="border-radius: 12px; overflow: hidden; height: 180px; border: 1.5px solid var(--glass-border); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                            <iframe src="https://maps.google.com/maps?q=MMR%20Complex,%20Chinna%20Thirupathi,%20near%20Chinna%20Muniyappan%20Kovil,%20Salem,%20Tamil%20Nadu%20636008&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+    </div>
+
+    <!-- JavaScript code for hamburger sidebar toggle, name loading and log out -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburgerBtn = document.getElementById("sidebar-hamburger-btn");
+            const sidebar = document.getElementById("sidebar-drawer");
+            const btnLogout = document.getElementById("btn-logout-action");
+            
+            // Toggle sidebar active state on mobile
+            if (hamburgerBtn && sidebar) {
+                hamburgerBtn.addEventListener("click", (e) => {
+                    sidebar.classList.toggle("active");
+                    e.stopPropagation();
+                });
+                
+                document.addEventListener("click", (e) => {
+                    if (sidebar.classList.contains("active") && !sidebar.contains(e.target) && e.target !== hamburgerBtn) {
+                        sidebar.classList.remove("active");
+                    }
+                });
+            }
+            
+            // Dynamic Name Loader from LocalStorage
+            const storedEmail = localStorage.getItem('stacklyUserEmail');
+            const welcomeText = document.getElementById('welcome-client-title');
+            const nameDisplay = document.getElementById('client-name-display');
+            const avatarDisplay = document.getElementById('client-avatar');
+            
+            if (storedEmail) {
+                // Extract part before @
+                const username = storedEmail.split('@')[0];
+                const capitalizedName = username.charAt(0).toUpperCase() + username.slice(1);
+                
+                if (welcomeText) {
+                    welcomeText.textContent = `Welcome back, ${capitalizedName}`;
+                }
+                if (nameDisplay) {
+                    nameDisplay.textContent = capitalizedName;
+                }
+                if (avatarDisplay) {
+                    avatarDisplay.textContent = capitalizedName.charAt(0);
+                }
+            }
+            
+            // Sizing form submit notification
+            const sizingForm = document.getElementById("sizing-profile-form");
+            if (sizingForm) {
+                sizingForm.addEventListener("submit", (e) => {
+                    e.preventDefault();
+                    alert("Your sizing profile measurements have been saved successfully!");
+                });
+            }
+            
+            // Log out handler
+            if (btnLogout) {
+                btnLogout.addEventListener("click", () => {
+                    localStorage.removeItem('stacklyUserEmail');
+                    localStorage.removeItem('stacklyUserRole');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

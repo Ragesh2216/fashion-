@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Fashion & Tailored Apparel - STACKLY</title>
+    <meta name="description" content="Providing elegant, bespoke tailoring and contemporary collections for the modern lifestyle. Your Style, Our Priority.">
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css?v=2">
+    <link rel="stylesheet" href="../css/loading.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="page-scroll-indicator"></div>
+    </div>
+
+    <!-- Main Outer Wrapper -->
+    <div class="site-wrapper" id="page-wrapper-container">
+        
+        <!-- Full-Bleed Hero Background Image (Exact design asset from screenshot) -->
+        <div class="hero-background-image" id="hero-bg-img" data-parallax-speed="0.015" aria-hidden="true"></div>
+
+        <!-- Floating Pill-Shaped Navbar Header -->
+        <header class="navbar-wrapper reveal-fade">
+            <div class="navbar-pill" id="navbar-pill-element">
+                <a href="#" class="navbar-brand" id="stackly-logo-home">
+                    <!-- Brand Logo Image (stackly-logo.webp) -->
+                    <img src="../assets/home/stackly-logo.webp" alt="STACKLY Logo" class="brand-logo-img">
+                </a>
+                
+                                <nav class="navbar-links" id="main-nav-links">
+                    <a href="#home" class="nav-item active" id="nav-item-home">Home</a>
+                    <a href="about.html" class="nav-item " id="nav-item-about">About us</a>
+                    <a href="service.html" class="nav-item " id="nav-item-services">Service</a>
+                    <a href="products.html" class="nav-item " id="nav-item-products">Products</a>
+                    <a href="blog.html" class="nav-item " id="nav-item-blog">Blog</a>
+                    <a href="contact.html" class="nav-item " id="nav-item-contact">Contact</a>
+                    <!-- Mobile Nav Actions -->
+                    <div class="mobile-nav-actions">
+                        <a href="cart.html" class="btn-mobile-cart" style="color: var(--primary-dark); font-weight: 600; margin-bottom: 10px; display: block; text-decoration: none;"><i class="fa-solid fa-bag-shopping"></i> Cart</a>
+                        <a href="login.html" class="btn-login">Login</a>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </nav>
+
+                                <div class="navbar-actions">
+                    <a href="cart.html" class="btn-cart-nav" id="btn-navbar-cart" aria-label="View Cart" style="position: relative; margin-right: 20px; color: var(--primary-dark); font-size: 1.25rem; display: inline-flex; align-items: center; text-decoration: none; transition: var(--transition-quick);">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-badge" id="nav-cart-count" style="position: absolute; top: -8px; right: -10px; background-color: var(--primary); color: white; border-radius: 50%; width: 16px; height: 16px; display: none; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700;">0</span>
+                    </a>
+                    <a href="login.html" class="btn-login" id="btn-navbar-login">Login</a>
+                    <a href="signup.html" class="btn-signup" id="btn-navbar-signup">Signup</a>
+                    
+                    <button class="menu-hamburger" id="nav-menu-hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-container" id="hero-section-trigger">
+            <!-- Blurry Glowing Heart behind the text card (exact screenshot design) -->
+            <div class="glowing-heart-behind-card" id="heart-glow-bg" data-parallax-speed="0.015">
+                <svg viewBox="0 0 100 100" fill="var(--primary-light)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 85 C 50 85, 12 55, 12 32 A 20 20 0 0 1 50 20 A 20 20 0 0 1 88 32 C 88 55, 50 85, 50 85 Z" />
+                </svg>
+            </div>
+            
+            <div class="hero-layout" id="hero-layout-3d-frame">
+                
+                <!-- Hero Left: Content Card -->
+                <div class="hero-card-column">
+                    <div class="hero-text-card reveal-slide-up" id="hero-card-element">
+                        <h1 class="reveal-text delay-1" id="anim-headline">Your Style, <span class="text-gold">Our Priority</span></h1>
+                        <h2 class="reveal-text delay-2" id="anim-subheadline">Premium Apparel for a <span class="text-gold-light">Distinguished Life</span></h2>
+                        <p class="reveal-text delay-3" id="anim-description">Providing elegant, bespoke tailoring and contemporary collections for the modern lifestyle.</p>
+                        
+                        <div class="hero-button-group reveal-text delay-4" id="anim-buttons">
+                            <a href="404.html" class="btn-book" id="btn-hero-appointment">Book Fitting</a>
+                            <a href="404.html" class="btn-learn" id="btn-hero-learn">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right: stylist Image -->
+                <div class="hero-image-column">
+                    <div class="stylist-image-wrapper reveal-image-right" id="stylist-img-container">
+                        <img src="../assets/img_1.webp" alt="Elegant model posing in premium design wear" class="stylist-img" id="interactive-stylist-img">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Statistics Section (Located Below Hero) -->
+        <section class="stats-section-container">
+            <div class="stats-card-wide reveal-scroll-up" id="statistics-card-bar">
+                <div class="stat-column">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+                    </div>
+                    <p class="stat-label">Fashion Partners</p>
+                </div>
+                
+                <div class="stat-column">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="90">0</span><span class="stat-suffix">%</span>
+                    </div>
+                    <p class="stat-label">Client Satisfaction</p>
+                </div>
+                
+                <div class="stat-column">
+                    <div class="stat-number-wrapper">
+                        <span class="stat-number" data-target="15">0</span><span class="stat-suffix"> Years</span>
+                    </div>
+                    <p class="stat-label">Design Experience</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Healthline Tools Section -->
+        <section class="tools-section-container" id="tools-section-trigger">
+            
+            <!-- Floating Background Image (Gemini Generated Image) with parallax drift (Full Bleed) -->
+            <div class="tools-bg-image-wrapper" id="tools-bg-img" data-parallax-speed="0.012" aria-hidden="true"></div>
+            
+            <!-- Inner Centered Content Wrapper -->
+            <div class="tools-inner-content">
+                <!-- Animated Gradient Heading -->
+                <div class="section-header reveal-scroll-up">
+                    <span class="section-tagline">FASHION Fashion Studio</span>
+                    <h2 class="animated-gradient-heading">Exclusive Styling Services</h2>
+                    <div class="heading-line-decor"></div>
+                </div>
+
+                <!-- Row 1: Healthy Eating (Large) & Recipe/Macro/Calorie Stack (Small) -->
+                <div class="tools-row row-1">
+                    <!-- Large Card: Healthy Eating -->
+                    <div class="tool-card-large reveal-right-to-left delay-1" id="food-tool-card">
+                        <div class="tool-card-content">
+                            <h3 class="tool-card-title">Bespoke Tailoring</h3>
+                            <p class="tool-card-desc">Experience the luxury of custom-fit suits and dresses tailored to your exact measurements by our master craftsmen.</p>
+                            <a href="404.html" class="btn-tool-visit">Book Consultation</a>
+                        </div>
+                        <div class="tool-card-image-wrap">
+                            <img src="../assets/img_4.webp" alt="Bespoke tailoring materials and design flatlay" class="tool-large-img">
+                        </div>
+                    </div>
+
+                    <!-- Right Stack: 3 Small Cards -->
+                    <div class="tool-card-stack reveal-right-to-left delay-2">
+                        <!-- Card 1 -->
+                        <div class="tool-card-small">
+                            <div class="tool-small-text">
+                                <h4 class="tool-small-title">Virtual Styling</h4>
+                                <p class="tool-small-desc">Get styling recommendations tailored to your silhouette</p>
+                            </div>
+                            <a href="404.html" class="tool-small-arrow" aria-label="Go to Virtual Styling">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="tool-card-small">
+                            <div class="tool-small-text">
+                                <h4 class="tool-small-title">Sizing Calculator</h4>
+                                <p class="tool-small-desc">Find your perfect fit size across global luxury brands</p>
+                            </div>
+                            <a href="404.html" class="tool-small-arrow" aria-label="Go to Sizing Calculator">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="tool-card-small">
+                            <div class="tool-small-text">
+                                <h4 class="tool-small-title">Fabric Library</h4>
+                                <p class="tool-small-desc">Browse our premium selection of merino wool, silk, and linen</p>
+                            </div>
+                            <a href="404.html" class="tool-small-arrow" aria-label="Go to Fabric Library">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: Pill/GLP-1/Private Showroom Stack (Small) & Drug Directory (Large) -->
+                <div class="tools-row row-2">
+                    <!-- Left Stack: 3 Small Cards -->
+                    <div class="tool-card-stack reveal-right-to-left delay-3">
+                        <!-- Card 1 -->
+                        <div class="tool-card-small">
+                            <div class="tool-small-text">
+                                <h4 class="tool-small-title">Wardrobe Edit</h4>
+                                <p class="tool-small-desc">Refresh and organize your closet with our personal stylists</p>
+                            </div>
+                            <a href="404.html" class="tool-small-arrow" aria-label="Go to Wardrobe Edit">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="tool-card-small">
+                            <div class="tool-small-text">
+                                <h4 class="tool-small-title">Exclusive Runway</h4>
+                                <p class="tool-small-desc">Get early access to our seasonal runway design releases</p>
+                            </div>
+                            <a href="404.html" class="tool-small-arrow" aria-label="Go to Exclusive Runway">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="tool-card-small">
+                            <div class="tool-small-text">
+                                <h4 class="tool-small-title">Private Showroom</h4>
+                                <p class="tool-small-desc">Book a private fitting session at our Fashion Store showroom</p>
+                            </div>
+                            <a href="404.html" class="tool-small-arrow" aria-label="Go to Private Showroom">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Large Card: Drug Directory -->
+                    <div class="tool-card-large reveal-right-to-left delay-4" id="drug-tool-card">
+                        <div class="tool-card-content">
+                            <h3 class="tool-card-title">Style Directory: A to Z</h3>
+                            <p class="tool-card-desc">Explore our curated guide to garment care, seasonal coordinates, and dress codes.</p>
+                            <a href="404.html" class="btn-tool-visit">Explore Styling</a>
+                        </div>
+                        <div class="tool-card-image-wrap">
+                            <img src="../assets/img_5.webp" alt="Luxury fashion showroom clothing rack" class="tool-large-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ===== Bespoke Tailoring Process Section ===== -->
+        <section class="process-section" id="process-section-trigger">
+            <div class="process-inner">
+                <div class="section-header reveal-scroll-up">
+                    <span class="section-tagline">OUR CRAFT</span>
+                    <h2 class="animated-gradient-heading">The Tailored Journey</h2>
+                    <div class="heading-line-decor"></div>
+                </div>
+
+                <div class="process-timeline reveal-scroll-up">
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="process-step-num">01</div>
+                        <div class="process-step-content">
+                            <h3 class="process-step-title">Design Consultation</h3>
+                            <p class="process-step-desc">Meet with a personal stylist to define your silhouette, design options, and wardrobe requirements.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="process-step">
+                        <div class="process-step-num">02</div>
+                        <div class="process-step-content">
+                            <h3 class="process-step-title">Digital Fit Mapping</h3>
+                            <p class="process-step-desc">Our advanced contact-free digitized sizing system records hundreds of data points for an immaculate pattern fit.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="process-step-num">03</div>
+                        <div class="process-step-content">
+                            <h3 class="process-step-title">Fabric Selection</h3>
+                            <p class="process-step-desc">Choose from over 5,000 premium fabrics, including hand-selected wools, soft cashmeres, and silks from top mills.</p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="process-step">
+                        <div class="process-step-num">04</div>
+                        <div class="process-step-content">
+                            <h3 class="process-step-title">Master Tailor Cut</h3>
+                            <p class="process-step-desc">Our master pattern-makers hand-draft and cut individual paper patterns unique to your exact measurements.</p>
+                        </div>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="process-step">
+                        <div class="process-step-num">05</div>
+                        <div class="process-step-content">
+                            <h3 class="process-step-title">Fitting & Refinement</h3>
+                            <p class="process-step-desc">Experience private fitting sessions where minor adjustments are hand-altered to achieve perfect draping.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Bespoke apparel collections Section (Auto-Scrolling Carousel) ===== -->
+        <section class="devices-section" id="devices-section-trigger">
+
+            <!-- Section Header -->
+            <div class="devices-header reveal-scroll-up">
+                <span class="devices-tagline">CURATED COLLECTIONS</span>
+
+                <!-- Animated Split Heading -->
+                <h2 class="devices-heading">
+                    <span class="devices-heading-line1">Exquisite Seasonal</span><span class="devices-heading-line2">Fashion <span class="devices-heading-accent">Lines</span></span>
+                </h2>
+                <div class="devices-heading-bar"></div>
+                <p class="devices-subtext">Indulge in artisanal collections showcasing modern refinement, premium fabrics, and timeless design.</p>
+            </div>
+
+            <!-- Infinite Auto-Scroll Track Wrapper -->
+            <div class="devices-carousel-wrapper" id="devices-carousel-wrapper">
+                <div class="devices-track" id="devices-track">
+
+                    <!-- ===== Card Set 1 (original) ===== -->
+                    <div class="device-card">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_6.webp" alt="The Evening Collection" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">The Evening Collection</h3>
+                            <p class="device-card-desc">Stunning evening gowns, luxury tuxedos, and silk cocktail dresses designed for unforgettable nights.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_7.webp" alt="Contemporary Casual Wear" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Contemporary Casuals</h3>
+                            <p class="device-card-desc">Breathe comfort and style into your daily wardrobe with our light linen sets and fine cotton shirts.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_8.webp" alt="Surgical ICU Equipment" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Sustainable Activewear</h3>
+                            <p class="device-card-desc">High-performance athleisure crafted from eco-certified recycled materials, blending comfort and movement.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_9.webp" alt="Neurology Brain Mapping" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Artisanal Accessories</h3>
+                            <p class="device-card-desc">Handcrafted full-grain leather bags, minimalist belts, and premium silk scarves to complete your look.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_6.webp" alt="Tailored Outerwear" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Tailored Outerwear</h3>
+                            <p class="device-card-desc">Premium wool overcoats, custom trench coats, and lightweight suede jackets for every season.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_7.webp" alt="Premium Footwear" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Premium Footwear</h3>
+                            <p class="device-card-desc">Handmade leather loafers, elegant heels, and minimal sneakers engineered for style and comfort.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_8.webp" alt="Lounge &amp; Sleepwear" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Lounge &amp; Sleepwear</h3>
+                            <p class="device-card-desc">Indulge in the finest mulberry silk pajamas and organic cotton lounge sets for ultimate comfort.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_9.webp" alt="Bespoke Accessoriesnology" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Bespoke Accessories</h3>
+                            <p class="device-card-desc">Bespoke sunglasses, handmade jewelry, and custom-tailored hats designed for unique expressions.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== Card Set 2 (duplicate for seamless infinite loop) ===== -->
+                    <div class="device-card" aria-hidden="true">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_6.webp" alt="The Evening Collection" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">The Evening Collection</h3>
+                            <p class="device-card-desc">Stunning evening gowns, luxury tuxedos, and silk cocktail dresses designed for unforgettable nights.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card" aria-hidden="true">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_7.webp" alt="Contemporary Casuals" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Contemporary Casuals</h3>
+                            <p class="device-card-desc">Breathe comfort and style into your daily wardrobe with our light linen sets and fine cotton shirts.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card" aria-hidden="true">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_8.webp" alt="Sustainable Activewear" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Sustainable Activewear</h3>
+                            <p class="device-card-desc">High-performance athleisure crafted from eco-certified recycled materials, blending comfort and movement.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card" aria-hidden="true">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_9.webp" alt="Artisanal Accessories" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Artisanal Accessories</h3>
+                            <p class="device-card-desc">Handcrafted full-grain leather bags, minimalist belts, and premium silk scarves to complete your look.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card" aria-hidden="true">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_6.webp" alt="Tailored Outerwear" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Tailored Outerwear</h3>
+                            <p class="device-card-desc">Premium wool overcoats, custom trench coats, and lightweight suede jackets for every season.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card" aria-hidden="true">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_7.webp" alt="Premium Footwear" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Premium Footwear</h3>
+                            <p class="device-card-desc">Handmade leather loafers, elegant heels, and minimal sneakers engineered for style and comfort.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card" aria-hidden="true">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_8.webp" alt="Lounge &amp; Sleepwear" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Lounge &amp; Sleepwear</h3>
+                            <p class="device-card-desc">Indulge in the finest mulberry silk pajamas and organic cotton lounge sets for ultimate comfort.</p>
+                        </div>
+                    </div>
+
+                    <div class="device-card" aria-hidden="true">
+                        <div class="device-card-img-wrap">
+                            <img src="../assets/img_9.webp" alt="Bespoke Accessories" class="device-card-img">
+                            <div class="device-card-img-overlay"></div>
+                        </div>
+                        <div class="device-card-body">
+                            <h3 class="device-card-title">Bespoke Accessories</h3>
+                            <p class="device-card-desc">Bespoke sunglasses, handmade jewelry, and custom-tailored hats designed for unique expressions.</p>
+                        </div>
+                    </div>
+
+                </div><!-- end .devices-track -->
+            </div><!-- end .devices-carousel-wrapper -->
+
+        </section>
+
+        <!-- ===== Recommended Reads Section ===== -->
+        <section class="reads-section" id="reads-section-trigger">
+
+            <!-- Animated Background Blobs -->
+            <div class="reads-animated-bg">
+                <div class="reads-blob reads-blob-1"></div>
+                <div class="reads-blob reads-blob-2"></div>
+                <div class="reads-blob reads-blob-3"></div>
+            </div>
+
+            <!-- Section Header -->
+            <div class="reads-header reveal-scroll-up" id="reads-header">
+                <span class="reads-tagline">FASHION & STYLE INSIGHTS</span>
+                <h2 class="reads-heading">
+                    <span class="reads-word reads-word-1">Editorial</span><span class="reads-word reads-word-2"> <span class="reads-word-accent">Journal</span></span>
+                </h2>
+                <div class="reads-heading-underline"></div>
+                <p class="reads-subtext">Curated style guides, fabric profiles, and seasonal lookbooks handpicked by our expert design team.</p>
+            </div>
+
+            <!-- Filter Tab Row -->
+            <div class="reads-tabs-wrapper" id="reads-tabs-wrapper">
+                <div class="reads-tabs">
+                    <button class="reads-tab active" data-filter="all" id="tab-top-reads">Top reads</button>
+                    <button class="reads-tab" data-filter="fitness" id="tab-fitness">Trends</button>
+                    <button class="reads-tab" data-filter="mental" id="tab-mental">Sustainability</button>
+                    <button class="reads-tab" data-filter="product" id="tab-product">Styling Guides</button>
+                    <button class="reads-tab" data-filter="recipes" id="tab-recipes">Heritage</button>
+                    <button class="reads-tab" data-filter="skin" id="tab-skin">Curation</button>
+                </div>
+            </div>
+
+            <!-- Article Grid -->
+            <div class="reads-grid-wrapper">
+                <div class="reads-grid" id="reads-article-grid">
+
+                    <!-- FITNESS (2 cards) -->
+                    <article class="reads-card" data-category="fitness">
+                        <div class="reads-card-img-wrap">
+                            <img src="../assets/img_18.webp" alt="5 Wardrobe Essentials for the Transitional Season" class="reads-card-img">
+                            <div class="reads-card-img-shine"></div>
+                        </div>
+                        <div class="reads-card-content">
+                            <span class="reads-card-tag">Trends</span>
+                            <h3 class="reads-card-title">5 Wardrobe Essentials for the Transitional Season</h3>
+                            <p class="reads-card-excerpt">Discover the versatile, timeless items that make layering between summer and autumn completely effortless.</p>
+                            <a href="404.html" class="reads-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        </div>
+                    </article>
+                    <article class="reads-card" data-category="fitness">
+                        <div class="reads-card-img-wrap">
+                            <img src="../assets/img_19.webp" alt="Sustainable Silk Production" class="reads-card-img">
+                            <div class="reads-card-img-shine"></div>
+                        </div>
+                        <div class="reads-card-content">
+                            <span class="reads-card-tag">Trends</span>
+                            <h3 class="reads-card-title">Behind the Seams: The Art of Sustainable Silk</h3>
+                            <p class="reads-card-excerpt">Meet our artisan partners in Northern Italy who source and weave organic mulberry silk with zero waste.</p>
+                            <a href="404.html" class="reads-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- MENTAL WELL-BEING (2 cards) -->
+                    <article class="reads-card" data-category="mental">
+                        <div class="reads-card-img-wrap">
+                            <img src="../assets/img_20.webp" alt="Custom Tailored Suit Close Up" class="reads-card-img">
+                            <div class="reads-card-img-shine"></div>
+                        </div>
+                        <div class="reads-card-content">
+                            <span class="reads-card-tag">Sustainability</span>
+                            <h3 class="reads-card-title">How Custom Tailoring Boosts Executive Presence</h3>
+                            <p class="reads-card-excerpt">Learn why custom sizing and structural tailoring can significantly alter personal confidence and workplace perception.</p>
+                            <a href="404.html" class="reads-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        </div>
+                    </article>
+                    <article class="reads-card" data-category="mental">
+                        <div class="reads-card-img-wrap">
+                            <img src="../assets/img_35.webp" alt="Luxury Cashmere Knitwear" class="reads-card-img">
+                            <div class="reads-card-img-shine"></div>
+                        </div>
+                        <div class="reads-card-content">
+                            <span class="reads-card-tag">Sustainability</span>
+                            <h3 class="reads-card-title">6 Tips to Care for and Preserve Cashmere Knitwear</h3>
+                            <p class="reads-card-excerpt">Extend the lifespan of your luxury knitwear with our comprehensive guide to washing, drying, and storage.</p>
+                            <a href="404.html" class="reads-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- PRODUCT REVIEWS (2 cards) -->
+                    <article class="reads-card" data-category="product">
+                        <div class="reads-card-img-wrap">
+                            <img src="../assets/img_36.webp" alt="Minimalist Capsule Wardrobe" class="reads-card-img">
+                            <div class="reads-card-img-shine"></div>
+                        </div>
+                        <div class="reads-card-content">
+                            <span class="reads-card-tag">Styling Guides</span>
+                            <h3 class="reads-card-title">The Rise of Minimalist Wardrobes in Modern Cities</h3>
+                            <p class="reads-card-excerpt">We explore how urban professionals are adopting the 10-item capsule wardrobe to reduce daily fatigue.</p>
+                            <a href="404.html" class="reads-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        </div>
+                    </article>
+                    <article class="reads-card" data-category="product">
+                        <div class="reads-card-img-wrap">
+                            <img src="../assets/img_37.webp" alt="Selecting Premium Fabrics" class="reads-card-img">
+                            <div class="reads-card-img-shine"></div>
+                        </div>
+                        <div class="reads-card-content">
+                            <span class="reads-card-tag">Styling Guides</span>
+                            <h3 class="reads-card-title">The Ultimate Guide to Selecting Premium Fabrics</h3>
+                            <p class="reads-card-excerpt">From long-staple Egyptian cotton to extra-fine merino wool, understand what makes luxury fabrics feel superior.</p>
+                            <a href="404.html" class="reads-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- RECIPES (2 cards) -->
+                    <article class="reads-card" data-category="recipes">
+                        <div class="reads-card-img-wrap">
+                            <img src="../assets/img_38.webp" alt="Perfect Suit Silhouette Diagram" class="reads-card-img">
+                            <div class="reads-card-img-shine"></div>
+                        </div>
+                        <div class="reads-card-content">
+                            <span class="reads-card-tag">Heritage</span>
+                            <h3 class="reads-card-title">Selecting the Perfect Suit Silhouette for Your Build</h3>
+                            <p class="reads-card-excerpt">A comprehensive visual layout detailing British, Italian, and American cuts and which fits your body type.</p>
+                            <a href="404.html" class="reads-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        </div>
+                    </article>
+                    <article class="reads-card" data-category="recipes">
+                        <div class="reads-card-img-wrap">
+                            <img src="../assets/img_39.webp" alt="Warm Earth Tone Fabrics" class="reads-card-img">
+                            <div class="reads-card-img-shine"></div>
+                        </div>
+                        <div class="reads-card-content">
+                            <span class="reads-card-tag">Heritage</span>
+                            <h3 class="reads-card-title">Colors of the Season: Curating Warm Earth Tones</h3>
+                            <p class="reads-card-excerpt">How to combine deep charcoal, sand, olive, and terracotta for a cohesive and sophisticated color look.</p>
+                            <a href="404.html" class="reads-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- SKIN CARE (2 cards) -->
+                    <article class="reads-card" data-category="skin">
+                        <div class="reads-card-img-wrap">
+                            <img src="../assets/img_40.webp" alt="Historical Tailoring Workshop" class="reads-card-img">
+                            <div class="reads-card-img-shine"></div>
+                        </div>
+                        <div class="reads-card-content">
+                            <span class="reads-card-tag">Curation</span>
+                            <h3 class="reads-card-title">The History of Tailoring: From Fashion Studio to Runway</h3>
+                            <p class="reads-card-excerpt">Trace the rich heritage of handcrafted tailoring and how it continues to shape modern haute couture.</p>
+                            <a href="404.html" class="reads-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        </div>
+                    </article>
+                    <article class="reads-card" data-category="skin">
+                        <div class="reads-card-img-wrap">
+                            <img src="../assets/img_41.webp" alt="Travel Styling in 8 Pieces" class="reads-card-img">
+                            <div class="reads-card-img-shine"></div>
+                        </div>
+                        <div class="reads-card-content">
+                            <span class="reads-card-tag">Curation</span>
+                            <h3 class="reads-card-title">Capsule Packing: Master Travel Styling in 8 Pieces</h3>
+                            <p class="reads-card-excerpt">How to pack light for business or leisure using multi-coordinate apparel that fits in a carry-on.</p>
+                            <a href="404.html" class="reads-card-link">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                        </div>
+                    </article>
+
+                </div><!-- end .reads-grid -->
+            </div>
+
+        </section>
+
+        <!-- ===== Why Choose Us Section ===== -->
+        <section class="why-choose-section" id="why-choose-trigger">
+
+            <!-- Subtle hex pattern background -->
+            <div class="why-bg-pattern" aria-hidden="true"></div>
+
+            <div class="why-inner">
+
+                <!-- LEFT: Stacked image block -->
+                <div class="why-left reveal-scroll-up">
+                    <div class="why-img-stack">
+                        <img
+                            src="../assets/img_10.webp"
+                            alt="fashion store professional at work"
+                            class="why-main-img"
+                        >
+                        <!-- Floating Fashion Studio Hours card -->
+                        <div class="why-hours-card">
+                            <div class="why-hours-glow" aria-hidden="true"></div>
+                            <div class="why-hours-header">
+                                <span class="why-hours-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 8V12L15 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="12" r="9" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                </span>
+                                <span>Fashion Studio Hours</span>
+                            </div>
+                            <ul class="why-hours-list">
+                                <li><span>Mon – Fri</span><span>9AM – 6PM</span></li>
+                                <li><span>Saturday</span><span>10AM – 5PM</span></li>
+                                <li><span>Sunday</span><span class="why-closed">Closed</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Content -->
+                <div class="why-right">
+
+                    <!-- Header -->
+                    <div class="why-header reveal-scroll-up">
+                        <span class="why-tagline">
+                            <span class="why-tagline-dot"></span>
+                            Why Choose Us
+                        </span>
+                        <h2 class="why-heading">
+                            Setting the standard for<br>bespoke &amp; <span class="why-heading-accent">refined apparel</span>
+                        </h2>
+                        <p class="why-desc">
+                            Through premium fabrics, certified master tailors, and customer-first design, we create garments that elevate your personal presence.
+                        </p>
+                    </div>
+
+                    <!-- Features + inset image row -->
+                    <div class="why-features-row reveal-scroll-up">
+
+                        <!-- Feature list -->
+                        <div class="why-features-list">
+                            <div class="why-feature">
+                                <span class="why-feature-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="#6EAC7D" stroke-width="2"/>
+                                        <path d="M7 12L10 15L17 8" stroke="#6EAC7D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <h3>Design Bespoke Tailoring Masters</h3>
+                                    <p>Our master tailors and fit experts bring decades of combined experience from European Fashion Studios.</p>
+                                </div>
+                            </div>
+                            <div class="why-feature">
+                                <span class="why-feature-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="#6EAC7D" stroke-width="2"/>
+                                        <path d="M7 12L10 15L17 8" stroke="#6EAC7D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <h3>Precision Custom Fit</h3>
+                                    <p>Our 3D custom measurement matrix ensures an absolutely flawless fit on the very first try.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Inset image -->
+                        <div class="why-inset-img">
+                            <img src="../assets/img_11.webp" alt="fashion facility interior">
+                        </div>
+
+                    </div>
+
+                    <!-- Footer: CTA + stylist profile -->
+                    <div class="why-footer reveal-scroll-up">
+                        <a href="404.html" class="why-btn">
+                            Learn More
+                            <span class="why-btn-icon">
+                                <svg width="13" height="13" viewBox="0 0 12 12" fill="none">
+                                    <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="why-profile">
+                            <img src="../assets/img_13.webp" alt="Chief Creative Officer" class="why-profile-img">
+                            <div>
+                                <h4>Dr. Sarah Mitchell</h4>
+                                <p>Chief Creative Officer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- end .why-right -->
+            </div><!-- end .why-inner -->
+        </section>
+
+        <!-- ===== Our Recognitions Section ===== -->
+        <section class="achiev-section" id="achiev-trigger">
+
+            <!-- Floating decorative blobs -->
+            <div class="achiev-blob achiev-blob-1" aria-hidden="true"></div>
+            <div class="achiev-blob achiev-blob-2" aria-hidden="true"></div>
+
+            <div class="achiev-inner">
+
+                <!-- Section header -->
+                <div class="achiev-header reveal-scroll-up">
+                    <span class="achiev-tagline">
+                        <span class="achiev-tagline-dot"></span>
+                        Our Recognition
+                    </span>
+                    <h2 class="achiev-heading">Awards &amp; recognition<br>for design <span class="achiev-heading-accent">excellence</span></h2>
+                </div>
+
+                <!-- Main content grid -->
+                <div class="achiev-grid">
+
+                    <!-- LEFT: Interactive display card -->
+                    <div class="achiev-display reveal-scroll-up" id="achievDisplay">
+
+                        <!-- Main photo -->
+                        <div class="achiev-photo-wrap">
+                            <img
+                                src="../assets/img_43.webp"
+                                alt="Award ceremony"
+                                class="achiev-photo"
+                                id="achievPhoto"
+                            >
+                            <!-- Overlay pill -->
+                            <div class="achiev-photo-pill">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                                <span id="achievPillYear">1999</span>
+                            </div>
+                        </div>
+
+                        <!-- Info card overlapping the photo -->
+                        <div class="achiev-info-card">
+                            <div class="achiev-info-card-glow" aria-hidden="true"></div>
+                            <p class="achiev-outline-year" id="achievYear">1999</p>
+                            <div class="achiev-trophy-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="8" r="7"/>
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                                </svg>
+                            </div>
+                            <p class="achiev-info-desc" id="achievDesc">
+                                Recognised for our unwavering commitment to precision, safety, and excellence in client care services.
+                            </p>
+                            <a href="404.html" class="achiev-know-more">Know More <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i></a>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT: Interactive list -->
+                    <div class="achiev-list-col reveal-scroll-up">
+                        <p class="achiev-list-intro">
+                            We believe every individual deserves garment silhouettes that bring out their true confidence. Our mission drives us to craft excellence.
+                        </p>
+
+                        <div class="achiev-items" id="achievItems">
+
+                            <div class="achiev-item active" data-index="0">
+                                <span class="achiev-item-year">1999</span>
+                                <div class="achiev-item-body">
+                                    <h3>Best Bespoke Fashion Studio</h3>
+                                    <p>Awarded for outstanding contribution to sustainable luxury and custom tailoring.</p>
+                                </div>
+                                <a href="404.html" class="achiev-item-arrow">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                </a>
+                            </div>
+
+                            <div class="achiev-item" data-index="1">
+                                <span class="achiev-item-year">2005</span>
+                                <div class="achiev-item-body">
+                                    <h3>Sustainable Fashion Award</h3>
+                                    <p>Recognised for sourcing 100% organic, traceable fibers and carbon-neutral processes.</p>
+                                </div>
+                                <a href="404.html" class="achiev-item-arrow">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                </a>
+                            </div>
+
+                            <div class="achiev-item" data-index="2">
+                                <span class="achiev-item-year">2012</span>
+                                <div class="achiev-item-body">
+                                    <h3>Excellence in Design &amp; Craft</h3>
+                                    <p>Three consecutive years awarded highest honors for garment construction and finishing.</p>
+                                </div>
+                                <a href="404.html" class="achiev-item-arrow">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                </a>
+                            </div>
+
+                            <div class="achiev-item" data-index="3">
+                                <span class="achiev-item-year">2020</span>
+                                <div class="achiev-item-body">
+                                    <h3>Best Custom Tailor Global</h3>
+                                    <p>Recognised by international fashion boards for bespoke tailoring services.</p>
+                                </div>
+                                <a href="404.html" class="achiev-item-arrow">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div><!-- end .achiev-grid -->
+            </div><!-- end .achiev-inner -->
+        </section>
+
+        <!-- ===== Benefits & Features Section ===== -->
+        <section class="benefits-section" id="benefits-section-trigger">
+            <div class="benefits-inner">
+                
+                <!-- Section Header -->
+                <div class="benefits-header reveal-scroll-up">
+                    <span class="benefits-tagline">
+                        <span class="benefits-tagline-dot"></span>
+                        Key Advantages
+                    </span>
+                    <h2 class="benefits-heading">Why discerning customers<br>choose <span class="benefits-heading-accent">Stackly</span></h2>
+                </div>
+
+                <div class="benefits-grid">
+                    <!-- Benefit Card 1 -->
+                    <div class="benefit-wrap reveal-scroll-up delay-1">
+                        <div class="benefit-overlay">
+                            <div class="benefit-overlay-content">
+                                <span class="benefit-tag">PRECISION</span>
+                                <h3>Bespoke Artistry</h3>
+                            </div>
+                            <div class="benefit-image-content"
+                                style="background-image: url('../assets/benefit_1.webp');">
+                            </div>
+                            <div class="benefit-dots">
+                                <div class="benefit-dot"></div>
+                                <div class="benefit-dot"></div>
+                                <div class="benefit-dot"></div>
+                            </div>
+                        </div>
+                        <div class="benefit-text-reveal">
+                            <ul class="checkmark-list-mini">
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> Timeless Styles
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> Premium Finishes
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> Custom Details
+                                </li>
+                            </ul>
+                            <p>Our patterns are cut by hand to fit the unique curvature and posture of your silhouette.</p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit Card 2 -->
+                    <div class="benefit-wrap reveal-scroll-up delay-2">
+                        <div class="benefit-overlay">
+                            <div class="benefit-overlay-content">
+                                <span class="benefit-tag">CARE</span>
+                                <h3>Exceptional Materials</h3>
+                            </div>
+                            <div class="benefit-image-content"
+                                style="background-image: url('../assets/benefit_2.webp');">
+                            </div>
+                            <div class="benefit-dots">
+                                <div class="benefit-dot"></div>
+                                <div class="benefit-dot"></div>
+                                <div class="benefit-dot"></div>
+                            </div>
+                        </div>
+                        <div class="benefit-text-reveal">
+                            <ul class="checkmark-list-mini">
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> Traceable Sourcing
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> Artisanal Weaves
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> Organic Fibers
+                                </li>
+                            </ul>
+                            <p>We source the finest cashmere, linen, and silk from family-owned mills in Italy and Japan.</p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit Card 3 -->
+                    <div class="benefit-wrap reveal-scroll-up delay-3">
+                        <div class="benefit-overlay">
+                            <div class="benefit-overlay-content">
+                                <span class="benefit-tag">MODERN</span>
+                                <h3>Smarter Wardrobes</h3>
+                            </div>
+                            <div class="benefit-image-content"
+                                style="background-image: url('../assets/benefit_3.webp');">
+                            </div>
+                            <div class="benefit-dots">
+                                <div class="benefit-dot"></div>
+                                <div class="benefit-dot"></div>
+                                <div class="benefit-dot"></div>
+                            </div>
+                        </div>
+                        <div class="benefit-text-reveal">
+                            <ul class="checkmark-list-mini">
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> Fit Profile Saver
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> Digital Wardrobe
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> One-Click Styling
+                                </li>
+                            </ul>
+                            <p>A connected styling portal that stores your fits and makes order updates effortless.</p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit Card 4 -->
+                    <div class="benefit-wrap reveal-scroll-up delay-4">
+                        <div class="benefit-overlay">
+                            <div class="benefit-overlay-content">
+                                <span class="benefit-tag">INTELLIGENT</span>
+                                <h3>AI Styling Assistance</h3>
+                            </div>
+                            <div class="benefit-image-content"
+                                style="background-image: url('../assets/benefit_4.webp');">
+                            </div>
+                            <div class="benefit-dots">
+                                <div class="benefit-dot"></div>
+                                <div class="benefit-dot"></div>
+                                <div class="benefit-dot"></div>
+                            </div>
+                        </div>
+                        <div class="benefit-text-reveal">
+                            <ul class="checkmark-list-mini">
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> Style Prediction
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> Smart Coordinates
+                                </li>
+                                <li>
+                                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg> Precise Cutting
+                                </li>
+                            </ul>
+                            <p>Utilizing body-contour algorithms to recommend coordinates and cut patterns with absolute precision.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Strip -->
+                <div class="feature-strip reveal-scroll-up">
+                    <div class="feature-item-strip">
+                        <svg class="strip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <div class="strip-text">
+                            <strong>Global Delivery</strong><span>Secure tracked shipping</span>
+                        </div>
+                    </div>
+                    <div class="feature-item-strip">
+                        <svg class="strip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                            <line x1="1" y1="10" x2="23" y2="10"></line>
+                        </svg>
+                        <div class="strip-text">
+                            <strong>Bespoke Consults</strong><span>One-on-one digital sessions</span>
+                        </div>
+                    </div>
+                    <div class="feature-item-strip">
+                        <svg class="strip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <div class="strip-text">
+                            <strong>Fashion Studio Club</strong><span>Exclusive member benefits</span>
+                        </div>
+                    </div>
+                    <div class="feature-item-strip">
+                        <svg class="strip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <div class="strip-text">
+                            <strong>24/7 Support</strong><span>On-call sizing assistance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Seasonal Editorial Lookbook Section ===== -->
+        <section class="lookbook-section" id="lookbook-section-trigger">
+            <div class="lookbook-inner">
+                <div class="section-header reveal-scroll-up">
+                    <span class="section-tagline">EDITORIAL</span>
+                    <h2 class="animated-gradient-heading">A/W Editorial Lookbook</h2>
+                    <div class="heading-line-decor"></div>
+                </div>
+
+                <div class="lookbook-grid reveal-scroll-up">
+                    <!-- Card 1 -->
+                    <div class="lookbook-card">
+                        <div class="lookbook-img-wrap">
+                            <img src="../assets/img_13.webp" alt="Classic double-breasted charcoal blazer" class="lookbook-img">
+                            <div class="lookbook-overlay">
+                                <span class="lookbook-category">Look 01</span>
+                                <h3 class="lookbook-title">Monochrome Elegance</h3>
+                                <p class="lookbook-desc">A study in high-contrast styling, featuring a structured cashmere wool blazer and tailored trousers.</p>
+                                <a href="404.html" class="lookbook-btn">Explore Look</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="lookbook-card">
+                        <div class="lookbook-img-wrap">
+                            <img src="../assets/img_14.webp" alt="Structured merino wool autumn overcoat" class="lookbook-img">
+                            <div class="lookbook-overlay">
+                                <span class="lookbook-category">Look 02</span>
+                                <h3 class="lookbook-title">Bespoke Sartorial</h3>
+                                <p class="lookbook-desc">Perfectly structured three-piece suit styled with double-faced merino wool and premium silk detailing.</p>
+                                <a href="404.html" class="lookbook-btn">Explore Look</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="lookbook-card">
+                        <div class="lookbook-img-wrap">
+                            <img src="../assets/img_15.webp" alt="Styled luxury velvet evening drape" class="lookbook-img">
+                            <div class="lookbook-overlay">
+                                <span class="lookbook-category">Look 03</span>
+                                <h3 class="lookbook-title">Evening Velvet</h3>
+                                <p class="lookbook-desc">Luxurious deep charcoal-rose velvet drape gown with hand-finished alterations and subtle tailoring contours.</p>
+                                <a href="404.html" class="lookbook-btn">Explore Look</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Our fashion Experts Section ===== -->
+        <section class="experts-section" id="experts-section-trigger">
+            
+            <!-- Animated Custom Background -->
+            <div class="experts-animated-bg">
+                <div class="cross-shape cross-1"></div>
+                <div class="cross-shape cross-2"></div>
+                <div class="cross-shape cross-3"></div>
+                <div class="cross-shape cross-4"></div>
+                <div class="cross-shape cross-5"></div>
+            </div>
+
+            <!-- Section Header -->
+            <div class="experts-header reveal-scroll-up">
+                <span class="experts-tagline">Our Designers</span>
+                <h2 class="experts-heading">Our master stylists &amp; designers</h2>
+            </div>
+
+            <!-- Infinite Scroll Carousel -->
+            <div class="experts-carousel-wrapper">
+                <div class="experts-track">
+                    <!-- Original 6 Cards -->
+                    <!-- Card 1 -->
+                    <div class="expert-card">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_1.webp" alt="Jenifer.L - Head Designer" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">Jenifer.L</h3>
+                        <p class="expert-role">Head Designer</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="expert-card">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_2.webp" alt="Kevin.P - Creative Director" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">Kevin.P</h3>
+                        <p class="expert-role">Creative Director</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="expert-card">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_3.webp" alt="Sarah.Tr - Head Designer" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">Sarah.Tr</h3>
+                        <p class="expert-role">Head Designer</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="expert-card">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_4.webp" alt="Martin.M - Master Tailor" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">Martin.M</h3>
+                        <p class="expert-role">Master Tailor</p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="expert-card">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_5.webp" alt="Mery.K - Bespoke Stylist" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">Mery.K</h3>
+                        <p class="expert-role">Bespoke Stylist</p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="expert-card">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_6.webp" alt="peter.B - Lead Patternmaker" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">peter.B</h3>
+                        <p class="expert-role">Lead Patternmaker</p>
+                    </div>
+
+                    <!-- DUPLICATED 6 CARDS FOR INFINITE SCROLL -->
+                    <!-- Card 1 -->
+                    <div class="expert-card" aria-hidden="true">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_1.webp" alt="Jenifer.L - Head Designer" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">Jenifer.L</h3>
+                        <p class="expert-role">Head Designer</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="expert-card" aria-hidden="true">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_2.webp" alt="Kevin.P - Creative Director" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">Kevin.P</h3>
+                        <p class="expert-role">Creative Director</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="expert-card" aria-hidden="true">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_3.webp" alt="Sarah.Tr - Head Designer" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">Sarah.Tr</h3>
+                        <p class="expert-role">Head Designer</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="expert-card" aria-hidden="true">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_4.webp" alt="Martin.M - Master Tailor" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">Martin.M</h3>
+                        <p class="expert-role">Master Tailor</p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="expert-card" aria-hidden="true">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_5.webp" alt="Mery.K - Bespoke Stylist" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">Mery.K</h3>
+                        <p class="expert-role">Bespoke Stylist</p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="expert-card" aria-hidden="true">
+                        <div class="expert-img-border">
+                            <img src="../assets/expert_6.webp" alt="peter.B - Lead Patternmaker" class="expert-img">
+                        </div>
+                        <div class="expert-socials">
+                            <a href="404.html" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                            <a href="404.html" class="social-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg></a>
+                        </div>
+                        <h3 class="expert-name">peter.B</h3>
+                        <p class="expert-role">Lead Patternmaker</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Testimonials Section ===== -->
+        <section class="testimonials-section" id="testimonials-section">
+            <div class="testimonials-bg"></div>
+            
+            <div class="testimonials-header reveal-scroll-up">
+                <span class="testimonials-tagline">TESTIMONIALS</span>
+                <h2 class="testimonials-heading">What Our Clients Say</h2>
+                <p class="testimonials-subheading">Trusted by executives, artists, and fashion connoisseurs across the globe.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Card 1 -->
+                <div class="testimonial-card reveal-scroll-up">
+                    <div class="testimonial-top">
+                        <div class="stars">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                        </div>
+                        <span class="testimonial-org">VOGUE STYLE FORUM</span>
+                    </div>
+                    <p class="testimonial-quote">"Stackly's bespoke tailoring service is completely transformative. The fit is absolute perfection and the fabric quality is unmatched. It has elevated my wardrobe."</p>
+                    <hr class="testimonial-divider">
+                    <div class="testimonial-footer">
+                        <img src="../assets/img_13.webp" alt="Dr. James Hoffman" class="testimonial-author-img">
+                        <div class="testimonial-author-info">
+                            <h4 class="testimonial-author-name">Dr. James Hoffman</h4>
+                            <p class="testimonial-author-role">Fashion Director<br><span>Vogue Style Forum</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="testimonial-card reveal-scroll-up delay-1">
+                    <div class="testimonial-top">
+                        <div class="stars">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                        </div>
+                        <span class="testimonial-org">THE TAILOR'S REPORT</span>
+                    </div>
+                    <p class="testimonial-quote">"The personal styling and alterations service at Stackly is truly unmatched. Their stylists are attentive, intuitive, and provide world-class style advice."</p>
+                    <hr class="testimonial-divider">
+                    <div class="testimonial-footer">
+                        <img src="../assets/img_36.webp" alt="Dr. Priya Nair" class="testimonial-author-img">
+                        <div class="testimonial-author-info">
+                            <h4 class="testimonial-author-name">Dr. Priya Nair</h4>
+                            <p class="testimonial-author-role">Chief Creative Officer<br><span>The Tailor's Report</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="testimonial-card reveal-scroll-up delay-2">
+                    <div class="testimonial-top">
+                        <div class="stars">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                        </div>
+                        <span class="testimonial-org">METROPOLITAN LUXURY REVIEW</span>
+                    </div>
+                    <p class="testimonial-quote">"An exceptional online and offline experience. The digital fit profile is incredibly accurate, making reordering new seasonal collections effortless."</p>
+                    <hr class="testimonial-divider">
+                    <div class="testimonial-footer">
+                        <img src="../assets/img_19.webp" alt="Mark Johnson" class="testimonial-author-img">
+                        <div class="testimonial-author-info">
+                            <h4 class="testimonial-author-name">Mark Johnson</h4>
+                            <p class="testimonial-author-role">Creative Consultant<br><span>Metropolitan Luxury Review</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="testimonial-card reveal-scroll-up delay-1">
+                    <div class="testimonial-top">
+                        <div class="stars">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                        </div>
+                        <span class="testimonial-org">LONDON FASHION QUARTERLY</span>
+                    </div>
+                    <p class="testimonial-quote">"The precision of their custom-cut garments is second to none. We have seen a remarkable standard of craftsmanship in every single collection."</p>
+                    <hr class="testimonial-divider">
+                    <div class="testimonial-footer">
+                        <img src="../assets/img_26.webp" alt="Dr. Sarah Lee" class="testimonial-author-img">
+                        <div class="testimonial-author-info">
+                            <h4 class="testimonial-author-name">Dr. Sarah Lee</h4>
+                            <p class="testimonial-author-role">Senior Master Tailor<br><span>London Fashion Quarterly</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="testimonial-card reveal-scroll-up delay-2">
+                    <div class="testimonial-top">
+                        <div class="stars">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                        </div>
+                        <span class="testimonial-org">THE SARTORIAL JOURNAL</span>
+                    </div>
+                    <p class="testimonial-quote">"Unparalleled garment build quality and minimalist silhouettes. The custom details are subtle but exquisite. An absolute wardrobe essential."</p>
+                    <hr class="testimonial-divider">
+                    <div class="testimonial-footer">
+                        <img src="../assets/img_22.webp" alt="Robert Chen" class="testimonial-author-img">
+                        <div class="testimonial-author-info">
+                            <h4 class="testimonial-author-name">Robert Chen</h4>
+                            <p class="testimonial-author-role">Menswear Critic<br><span>The Sartorial Journal</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="testimonial-card reveal-scroll-up delay-3">
+                    <div class="testimonial-top">
+                        <div class="stars">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                        </div>
+                        <span class="testimonial-org">LUXURY RETAIL REPORT</span>
+                    </div>
+                    <p class="testimonial-quote">"From styling session to final delivery, the experience has been flawless. Their attention to minor alterations makes each piece a work of art."</p>
+                    <hr class="testimonial-divider">
+                    <div class="testimonial-footer">
+                        <img src="../assets/img_28.webp" alt="Dr. Amanda Torres" class="testimonial-author-img">
+                        <div class="testimonial-author-info">
+                            <h4 class="testimonial-author-name">Dr. Amanda Torres</h4>
+                            <p class="testimonial-author-role">Managing Editor<br><span>Luxury Retail Report</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer" id="site-footer">
+        <div class="footer-bg-anim"></div>
+        <div class="footer-inner">
+
+            <!-- Col 1: Brand -->
+            <div class="footer-col footer-brand-col">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="../assets/home/stackly-logo.webp" alt="Stackly Logo" class="footer-logo">
+                </a>
+                <p class="footer-tagline">At Stackly, we deliver refined styling and custom-fit apparel focused on quality, craftsmanship, and timeless design.</p>
+                <div class="footer-contact-details">
+                    <a href="tel:+18005551234" class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+                        +1 (800) 555-4321
+                    </a>
+                    <a href="mailto:concierge@stackly.com" class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        concierge@stackly.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- Col 2: Office -->
+                        <div class="footer-col footer-office-col">
+                <h4 class="footer-col-title">Office</h4>
+                <address class="footer-address">
+                    Salem Shop,<br>
+                    MMR Complex, Chinna Thirupathi,<br>
+                    near Chinna Muniyappan Kovil,<br>
+                    Salem, Tamil Nadu 636008
+                </address>
+                <!-- Embedded Google Map -->
+                <div class="footer-map" style="margin-top: 12px; border-radius: 8px; overflow: hidden; height: 100px; border: 1px solid rgba(255,255,255,0.1);">
+                    <iframe src="https://maps.google.com/maps?q=MMR%20Complex,%20Chinna%20Thirupathi,%20near%20Chinna%20Muniyappan%20Kovil,%20Salem,%20Tamil%20Nadu%20636008&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Col 3: Links -->
+            <div class="footer-col footer-links-col">
+                <h4 class="footer-col-title">Links</h4>
+                <nav class="footer-nav">
+                    <a href="index.html" class="footer-nav-link">Home</a>
+                    <a href="about.html" class="footer-nav-link">About us</a>
+                    <a href="service.html" class="footer-nav-link">Service</a>
+                    <a href="blog.html" class="footer-nav-link">Blog</a>
+                    <a href="contact.html" class="footer-nav-link">Contact</a>
+                    <a href="login.html" class="footer-nav-link">Login</a>
+                    <a href="signup.html" class="footer-nav-link">Signup</a>
+                </nav>
+            </div>
+
+            <!-- Col 4: Follow Us -->
+            <div class="footer-col footer-social-col">
+                <h4 class="footer-col-title">Follow us</h4>
+                <div class="footer-social-icons">
+                    <a href="404.html" class="footer-social-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96C1 8.12 1 12 1 12s0 3.88.46 5.58a2.78 2.78 0 0 0 1.95 1.95+5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95C23 15.88 23 12 23 12s0-3.88-.46-5.58z"/><polygon fill="currentColor" stroke="none" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; 2025 Stackly Fashion Store. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <span>·</span>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link the external javascript file containing advanced interactivity -->
+    <script src="../js/script.js"></script>
+    <script src="../js/cart-helper.js"></script>
+</body>
+</html>
+
+
+

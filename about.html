@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - STACKLY fashion store</title>
+    <meta name="description" content="About Stackly — We provide advanced and reliable styling and custom tailoring solutions for the modern wardrobe.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/loading.css">
+</head>
+<body class="about-page">
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="page-scroll-indicator"></div>
+    </div>
+
+    <!-- ===== NAVBAR (identical to index.html) ===== -->
+    <div class="site-wrapper">
+
+        <header class="navbar-wrapper" id="about-navbar">
+            <div class="navbar-pill" id="navbar-pill-element">
+                <a href="index.html" class="navbar-brand">
+                    <img src="../assets/home/stackly-logo.webp" alt="STACKLY Logo" class="brand-logo-img">
+                </a>
+                                <nav class="navbar-links" id="main-nav-links">
+                    <a href="index.html" class="nav-item " id="nav-item-home">Home</a>
+                    <a href="about.html" class="nav-item active" id="nav-item-about">About us</a>
+                    <a href="service.html" class="nav-item " id="nav-item-services">Service</a>
+                    <a href="products.html" class="nav-item " id="nav-item-products">Products</a>
+                    <a href="blog.html" class="nav-item " id="nav-item-blog">Blog</a>
+                    <a href="contact.html" class="nav-item " id="nav-item-contact">Contact</a>
+                    <!-- Mobile Nav Actions -->
+                    <div class="mobile-nav-actions">
+                        <a href="cart.html" class="btn-mobile-cart" style="color: var(--primary-dark); font-weight: 600; margin-bottom: 10px; display: block; text-decoration: none;"><i class="fa-solid fa-bag-shopping"></i> Cart</a>
+                        <a href="login.html" class="btn-login">Login</a>
+                        <a href="signup.html" class="btn-signup">Signup</a>
+                    </div>
+                </nav>
+                                <div class="navbar-actions">
+                    <a href="cart.html" class="btn-cart-nav" id="btn-navbar-cart" aria-label="View Cart" style="position: relative; margin-right: 20px; color: var(--primary-dark); font-size: 1.25rem; display: inline-flex; align-items: center; text-decoration: none; transition: var(--transition-quick);">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-badge" id="nav-cart-count" style="position: absolute; top: -8px; right: -10px; background-color: var(--primary); color: white; border-radius: 50%; width: 16px; height: 16px; display: none; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 700;">0</span>
+                    </a>
+                    <a href="login.html"  class="btn-login"  id="btn-navbar-login">Login</a>
+                    <a href="signup.html" class="btn-signup" id="btn-navbar-signup">Signup</a>
+                    <button class="menu-hamburger" id="nav-menu-hamburger"
+                            aria-label="Toggle Navigation Menu" aria-expanded="false">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ===== ABOUT HERO SECTION ===== -->
+        <section class="about-hero" id="about-hero">
+
+            <!-- Soft background gradient blobs -->
+            <div class="about-hero-bg" aria-hidden="true">
+                <div class="ah-blob ah-blob-1"></div>
+                <div class="ah-blob ah-blob-2"></div>
+                <div class="ah-blob ah-blob-3"></div>
+            </div>
+
+            <div class="about-hero-inner">
+
+                <!-- LEFT: Text content -->
+                <div class="about-hero-left">
+
+                    <!-- Tagline -->
+                    <div class="ah-tagline" id="ah-tagline">
+                        <span class="ah-tagline-dot"></span>
+                        <span>About <span class="ah-tagline-brand">Stackly</span></span>
+                    </div>
+
+                    <!-- Main heading — each line animates in separately -->
+                    <h1 class="ah-heading" id="ah-heading">
+                        <span class="ah-line ah-line-1">We Provide Advanced &amp;</span>
+                        <span class="ah-line ah-line-2">Reliable <em class="ah-accent">fashion</em></span>
+                        <span class="ah-line ah-line-3"><em class="ah-accent">Styling</em></span>
+                        <span class="ah-line ah-line-4">For the Modern Wardrobe</span>
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="ah-desc" id="ah-desc">
+                        Stackly delivers certified styling collections built for precision and
+                        style. Our solutions support fashion boutiques, retail spaces, and fashion store
+                        professionals with dependable technology designed to improve
+                        client outcomes and streamline fashion operations.
+                    </p>
+
+                    <!-- CTA buttons -->
+                    <div class="ah-btns" id="ah-btns">
+                        <a href="404.html" class="ah-btn-primary">
+                            Book Fitting
+                            <span class="ah-btn-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </span>
+                        </a>
+                        <a href="404.html" class="ah-btn-outline">Learn More</a>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: Hero image + floating badge -->
+                <div class="about-hero-right" id="ah-right">
+
+                    <!-- Main image -->
+                    <div class="ah-img-wrap">
+                        <img
+                            src="../assets/img_15.webp"
+                            alt="Stackly designer in styling studio"
+                            class="ah-main-img"
+                            id="ah-main-img"
+                        >
+                        <!-- subtle desert sun ring overlay on hover -->
+                        <div class="ah-img-ring" aria-hidden="true"></div>
+                    </div>
+
+                    <!-- Floating ISO badge (bottom-left of image) -->
+                    <div class="ah-badge" id="ah-badge">
+                        <span class="ah-badge-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <circle cx="12" cy="8" r="6"/>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <p class="ah-badge-title">ISO 13485</p>
+                            <p class="ah-badge-sub">Certified stylists</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating stat chip (top-left of image) -->
+                    <div class="ah-stat-chip" id="ah-stat-chip">
+                        <span class="ah-stat-num">15+</span>
+                        <span class="ah-stat-label">Years of excellence</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== STATS BAR ===== -->
+        <section class="about-stats-bar" id="about-stats-bar">
+            <div class="about-stats-inner">
+                <div class="about-stat-item">
+                    <span class="about-stat-num" data-target="500">0</span><span class="about-stat-suf">+</span>
+                    <p>Fashion Partners</p>
+                </div>
+                <div class="about-stat-divider"></div>
+                <div class="about-stat-item">
+                    <span class="about-stat-num" data-target="98">0</span><span class="about-stat-suf">%</span>
+                    <p>client Satisfaction</p>
+                </div>
+                <div class="about-stat-divider"></div>
+                <div class="about-stat-item">
+                    <span class="about-stat-num" data-target="15">0</span><span class="about-stat-suf"> Yrs</span>
+                    <p>sartorial Experience</p>
+                </div>
+                <div class="about-stat-divider"></div>
+                <div class="about-stat-item">
+                    <span class="about-stat-num" data-target="1200">0</span><span class="about-stat-suf">+</span>
+                    <p>Certified stylists</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== OUR STORY & JOURNEY SECTION ===== -->
+        <section class="story-journey-section" id="story-journey-trigger">
+
+            <!-- OUR STORY Card (image left, text right) -->
+            <div class="sj-card story-card reveal-scroll-up">
+                <div class="sj-card-inner">
+                    <div class="sj-img-col">
+                        <div class="sj-img-frame" data-tilt>
+                            <img src="../assets/img_42.webp" alt="stylist consulting client" class="sj-img">
+                            <div class="sj-img-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="sj-text-col">
+                        <span class="sj-eyebrow">Our Heritage</span>
+                        <h2 class="sj-heading">
+                            <span class="sj-heading-line">Two Decades of Building</span>
+                            <span class="sj-heading-line"><em class="sj-accent">fashion Excellence</em></span>
+                        </h2>
+                        <p class="sj-desc">
+                            From a single research lab in Boston to a global network of biofashion
+                            engineers, Stackly has grown by solving the problems that matter most
+                            to clients and designers alike.
+                        </p>
+                        <p class="sj-desc">
+                            Our journey began with a commitment to innovation, precision, and
+                            compassion — values that continue to guide every decision we make.
+                        </p>
+                        <a href="404.html" class="sj-link">
+                            Read Our Full Story
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OUR JOURNEY Card (text left, image right) -->
+            <div class="sj-card journey-card reveal-scroll-up">
+                <div class="sj-card-inner">
+                    <div class="sj-text-col">
+                        <span class="sj-eyebrow">Our Journey</span>
+                        <h2 class="sj-heading">
+                            <span class="sj-heading-line">A Legacy of <em class="sj-accent">Trust</em></span>
+                            <span class="sj-heading-line">and Innovation</span>
+                        </h2>
+                        <p class="sj-desc">
+                            Founded with a vision to revolutionize fashion procurement, Stackly
+                            started as a small team of engineers and fashion store consultants.
+                            Today, we are a global leader in providing high-precision fashion equipment.
+                        </p>
+                        <p class="sj-desc">
+                            We understand that in fashion store, every second and every millimeter counts.
+                            That's why we meticulously vet every manufacturer and every component
+                            that enters our catalog.
+                        </p>
+                        <div class="sj-features">
+                            <div class="sj-feature-item">
+                                <span class="sj-feature-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <span>Certified Global Network</span>
+                            </div>
+                            <div class="sj-feature-item">
+                                <span class="sj-feature-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <span>ISO 13485 Compliance</span>
+                            </div>
+                            <div class="sj-feature-item">
+                                <span class="sj-feature-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                </span>
+                                <span>24/7 Technical Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sj-img-col">
+                        <div class="sj-img-frame" data-tilt>
+                            <img src="../assets/img_43.webp" alt="fashion team collaboration" class="sj-img">
+                            <div class="sj-img-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ===== LEADERSHIP SECTION ===== -->
+        <section class="leadership-section" id="leadership-trigger">
+
+            <!-- Background decoration -->
+            <div class="ls-bg-decoration" aria-hidden="true">
+                <div class="ls-bg-circle ls-bg-circle-1"></div>
+                <div class="ls-bg-circle ls-bg-circle-2"></div>
+            </div>
+
+            <div class="ls-inner">
+
+                <!-- Section Header -->
+                <div class="ls-header reveal-scroll-up">
+                    <span class="ls-eyebrow">
+                        <span class="ls-eyebrow-dot"></span>
+                        Leadership
+                    </span>
+                    <h2 class="ls-heading">
+                        Meet the <em class="ls-heading-accent">visionaries</em> behind<br>
+                        <span class="ls-heading-sub">Stackly's mission</span>
+                    </h2>
+                    <div class="ls-heading-bar"></div>
+                    <p class="ls-subtext">
+                        A world-class team of stylists, master tailors, and fashion innovators
+                        united by one goal — better fashion choices for everyone.
+                    </p>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="ls-cards-grid">
+
+                    <!-- Card 1 -->
+                    <div class="ls-card reveal-scroll-up" style="--ls-delay:0.1s">
+                        <div class="ls-card-inner">
+                            <!-- Front face -->
+                            <div class="ls-card-front">
+                                <div class="ls-card-img-wrap">
+                                    <img src="../assets/about/sarah_chen.webp"
+                                         alt="Dr. Sarah Chen" class="ls-card-img">
+                                    <div class="ls-card-img-overlay"></div>
+                                    <div class="ls-card-img-badge">CEO</div>
+                                </div>
+                                <div class="ls-card-body">
+                                    <h3 class="ls-card-name">Dr. Sarah Chen</h3>
+                                    <p class="ls-card-role">Chief Executive Officer</p>
+                                    <div class="ls-card-socials">
+                                        <a href="404.html" class="ls-social-btn ls-social-linkedin" aria-label="LinkedIn">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                        </a>
+                                        <a href="404.html" class="ls-social-btn ls-social-x" aria-label="X / Twitter">
+                                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                        </a>
+                                        <a href="404.html" class="ls-social-btn ls-social-mail" aria-label="Email">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Hover glow -->
+                                <div class="ls-card-glow" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <!-- Floating number tag -->
+                        <div class="ls-card-number">01</div>
+                    </div>
+
+                    <!-- Card 2 — featured / center (larger) -->
+                    <div class="ls-card ls-card-featured reveal-scroll-up" style="--ls-delay:0.25s">
+                        <div class="ls-card-inner">
+                            <div class="ls-card-front">
+                                <div class="ls-card-img-wrap">
+                                    <img src="../assets/about/marcus_webb.webp"
+                                         alt="Dr. Marcus Webb" class="ls-card-img">
+                                    <div class="ls-card-img-overlay"></div>
+                                    <div class="ls-card-img-badge ls-badge-featured">CMO</div>
+                                </div>
+                                <div class="ls-card-body">
+                                    <h3 class="ls-card-name">Dr. Marcus Webb</h3>
+                                    <p class="ls-card-role">Chief fashion Officer</p>
+                                    <p class="ls-card-bio">
+                                        20+ years driving sartorial innovation across 40 countries.
+                                    </p>
+                                    <div class="ls-card-socials">
+                                        <a href="404.html" class="ls-social-btn ls-social-linkedin" aria-label="LinkedIn">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                                        </a>
+                                        <a href="404.html" class="ls-social-btn ls-social-x" aria-label="X / Twitter">
+                                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                        </a>
+                                        <a href="404.html" class="ls-social-btn ls-social-mail" aria-label="Email">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ls-card-glow" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <div class="ls-card-number">02</div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="ls-card reveal-scroll-up" style="--ls-delay:0.4s">
+                        <div class="ls-card-inner">
+                            <div class="ls-card-front">
+                                <div class="ls-card-img-wrap">
+                                    <img src="../assets/about/james_hargrove.webp"
+                                         alt="Dr. James Hargrove" class="ls-card-img">
+                                    <div class="ls-card-img-overlay"></div>
+                                    <div class="ls-card-img-badge">CTO</div>
+                                </div>
+                                <div class="ls-card-body">
+                                    <h3 class="ls-card-name">Dr. James Hargrove</h3>
+                                    <p class="ls-card-role">Head of Engineering</p>
+                                    <div class="ls-card-socials">
+                                        <a href="404.html" class="ls-social-btn ls-social-linkedin" aria-label="LinkedIn">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                                        </a>
+                                        <a href="404.html" class="ls-social-btn ls-social-x" aria-label="X / Twitter">
+                                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                        </a>
+                                        <a href="404.html" class="ls-social-btn ls-social-mail" aria-label="Email">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ls-card-glow" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <div class="ls-card-number">03</div>
+                    </div>
+
+                </div><!-- end .ls-cards-grid -->
+
+            </div><!-- end .ls-inner -->
+        </section>
+
+        <!-- ===== CORE VALUES & HOLISTIC CARE SECTION ===== -->
+        <section class="values-holistic-section" id="values-holistic-trigger">
+
+            <div class="vh-inner">
+
+                <!-- PART 1: Core Values Header + Scrolling Cards -->
+                <div class="vh-values-block" id="vh-values-block">
+
+                    <!-- Header -->
+                    <div class="vh-values-header reveal-scroll-up">
+                        <span class="vh-eyebrow">
+                            <span class="vh-eyebrow-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </span>
+                            Our Core Ethos
+                        </span>
+                        <h2 class="vh-heading">
+                            <span class="vh-heading-line">Principles That</span>
+                            <span class="vh-heading-line"><em class="vh-accent">Drive</em> Us Forward</span>
+                        </h2>
+                        <div class="vh-heading-underline"></div>
+                    </div>
+
+                    <!-- Horizontally scrolling value cards -->
+                    <div class="vh-values-track-wrapper" id="vh-track-wrapper">
+                        <div class="vh-values-track" id="vh-values-track">
+
+                            <!-- Card 1 -->
+                            <div class="vh-value-card">
+                                <span class="vh-card-number">01</span>
+                                <h3 class="vh-card-title">Design Quality</h3>
+                                <p class="vh-card-desc">
+                                    Every design decision is evaluated through a single lens: does it meet our standards of luxury and fit? There are no compromises here.
+                                </p>
+                                <div class="vh-card-icon">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="vh-value-card">
+                                <span class="vh-card-number">02</span>
+                                <h3 class="vh-card-title">Sustainable Sourcing</h3>
+                                <p class="vh-card-desc">
+                                    We invest in sustainable, eco-certified fabric sourcing, keeping us at the frontier of environmentally-conscious luxury fashion.
+                                </p>
+                                <div class="vh-card-icon">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.4 4.4l4.2 4.2m0-14.8l-4.2 4.2m-4.4 4.4l-4.2 4.2"/></svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="vh-value-card">
+                                <span class="vh-card-number">03</span>
+                                <h3 class="vh-card-title">Artisan Partnership</h3>
+                                <p class="vh-card-desc">
+                                    Our products are co-designed with master artisans and styling experts to ensure real-world comfort and sartorial relevance.
+                                </p>
+                                <div class="vh-card-icon">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="vh-value-card">
+                                <span class="vh-card-number">04</span>
+                                <h3 class="vh-card-title">Precision Sizing</h3>
+                                <p class="vh-card-desc">
+                                    Every measurement that influences fit is validated through rigorous quality control and custom tailoring processes.
+                                </p>
+                                <div class="vh-card-icon">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="vh-value-card">
+                                <span class="vh-card-number">05</span>
+                                <h3 class="vh-card-title">Timeless Elegance</h3>
+                                <p class="vh-card-desc">
+                                    Timeless elegance shouldn't be out of reach. We work to make premium quality clothing accessible with transparent luxury pricing.
+                                </p>
+                                <div class="vh-card-icon">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- PART 2: Holistic Care (text left, image right) -->
+                <div class="vh-holistic-block reveal-scroll-up" id="vh-holistic-block">
+                    <div class="vh-holistic-inner">
+
+                        <!-- Text column -->
+                        <div class="vh-holistic-text">
+                            <span class="vh-hol-eyebrow">Holistic fashion Approach</span>
+                            <h2 class="vh-hol-heading">
+                                Empower your style<br>
+                                with <em class="vh-hol-accent">Stackly</em>
+                            </h2>
+                            <p class="vh-hol-desc">
+                                Stackly delivers advanced styling and custom tailoring to every client,
+                                blending expertise and compassion for better lives.
+                            </p>
+                            <p class="vh-hol-desc">
+                                Our integrated approach considers not just coordinates but the whole personal aesthetic,
+                                ensuring sustainable and meaningful fashion outcomes.
+                            </p>
+                            <a href="404.html" class="vh-hol-btn">
+                                Discover Our Approach
+                                <span class="vh-hol-btn-icon">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- Image column with rounded frame -->
+                        <div class="vh-holistic-img">
+                            <div class="vh-holistic-img-frame">
+                                <img src="../assets/img_42.webp"
+                                     alt="designer consulting client"
+                                     class="vh-holistic-img-inner">
+                                <div class="vh-holistic-img-overlay"></div>
+                                <!-- Floating badge -->
+                                <div class="vh-img-badge">
+                                    <span class="vh-badge-icon"><i class="fa-solid fa-check"></i></span>
+                                    <span>Certified Excellence</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div><!-- end .vh-inner -->
+        </section>
+
+    </div><!-- end .site-wrapper -->
+
+    
+
+        <!-- ===== CORE VALUES & HOLISTIC CARE SECTION ===== -->
+        <section class="values-holistic-section" id="values-holistic-trigger">
+
+            <div class="vh-inner">
+
+                <!-- PART 1: Core Values Header + Scrolling Cards -->
+                <div class="vh-values-block" id="vh-values-block">
+
+                    <!-- Header -->
+                    <div class="vh-values-header reveal-scroll-up">
+                        <span class="vh-eyebrow">
+                            <span class="vh-eyebrow-icon">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </span>
+                            Our Core Ethos
+                        </span>
+                        <h2 class="vh-heading">
+                            <span class="vh-heading-line">Principles That</span>
+                            <span class="vh-heading-line"><em class="vh-accent">Drive</em> Us Forward</span>
+                        </h2>
+                        <div class="vh-heading-underline"></div>
+                    </div>
+
+                    <!-- Horizontally scrolling value cards -->
+                    <div class="vh-values-track-wrapper" id="vh-track-wrapper">
+                        <div class="vh-values-track" id="vh-values-track">
+
+                            <!-- Card 1 -->
+                            <div class="vh-value-card">
+                                <span class="vh-card-number">01</span>
+                                <h3 class="vh-card-title">Design Quality</h3>
+                                <p class="vh-card-desc">
+                                    Every design decision is evaluated through a single lens: does it meet our standards of luxury and fit? There are no compromises here.
+                                </p>
+                                <div class="vh-card-icon">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="vh-value-card">
+                                <span class="vh-card-number">02</span>
+                                <h3 class="vh-card-title">Sustainable Sourcing</h3>
+                                <p class="vh-card-desc">
+                                    We invest in sustainable, eco-certified fabric sourcing, keeping us at the frontier of environmentally-conscious luxury fashion.
+                                </p>
+                                <div class="vh-card-icon">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.4 4.4l4.2 4.2m0-14.8l-4.2 4.2m-4.4 4.4l-4.2 4.2"/></svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="vh-value-card">
+                                <span class="vh-card-number">03</span>
+                                <h3 class="vh-card-title">Artisan Partnership</h3>
+                                <p class="vh-card-desc">
+                                    Our products are co-designed with master artisans and styling experts to ensure real-world comfort and sartorial relevance.
+                                </p>
+                                <div class="vh-card-icon">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="vh-value-card">
+                                <span class="vh-card-number">04</span>
+                                <h3 class="vh-card-title">Precision Sizing</h3>
+                                <p class="vh-card-desc">
+                                    Every measurement that influences fit is validated through rigorous quality control and custom tailoring processes.
+                                </p>
+                                <div class="vh-card-icon">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="vh-value-card">
+                                <span class="vh-card-number">05</span>
+                                <h3 class="vh-card-title">Timeless Elegance</h3>
+                                <p class="vh-card-desc">
+                                    Timeless elegance shouldn't be out of reach. We work to make premium quality clothing accessible with transparent luxury pricing.
+                                </p>
+                                <div class="vh-card-icon">
+                                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- PART 2: Holistic Care (text left, image right) -->
+                <div class="vh-holistic-block reveal-scroll-up" id="vh-holistic-block">
+                    <div class="vh-holistic-inner">
+
+                        <!-- Text column -->
+                        <div class="vh-holistic-text">
+                            <span class="vh-hol-eyebrow">Holistic fashion Approach</span>
+                            <h2 class="vh-hol-heading">
+                                Empower your style<br>
+                                with <em class="vh-hol-accent">Stackly</em>
+                            </h2>
+                            <p class="vh-hol-desc">
+                                Stackly delivers advanced styling and custom tailoring to every client,
+                                blending expertise and compassion for better lives.
+                            </p>
+                            <p class="vh-hol-desc">
+                                Our integrated approach considers not just coordinates but the whole personal aesthetic,
+                                ensuring sustainable and meaningful fashion outcomes.
+                            </p>
+                            <a href="404.html" class="vh-hol-btn">
+                                Discover Our Approach
+                                <span class="vh-hol-btn-icon">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- Image column with rounded frame -->
+                        <div class="vh-holistic-img">
+                            <div class="vh-holistic-img-frame">
+                                <img src="../assets/img_42.webp"
+                                     alt="designer consulting client"
+                                     class="vh-holistic-img-inner">
+                                <div class="vh-holistic-img-overlay"></div>
+                                <!-- Floating badge -->
+                                <div class="vh-img-badge">
+                                    <span class="vh-badge-icon"><i class="fa-solid fa-check"></i></span>
+                                    <span>Certified Excellence</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div><!-- end .vh-inner -->
+        </section>
+
+    </div><!-- end .site-wrapper -->
+
+    <!-- ===== NEWSLETTER SECTION ===== -->
+    <section class="about-newsletter-section" id="about-newsletter">
+        <div class="anl-inner reveal-scroll-up">
+
+            <!-- Decorative blobs -->
+            <div class="anl-blob anl-blob-1" aria-hidden="true"></div>
+            <div class="anl-blob anl-blob-2" aria-hidden="true"></div>
+
+            <!-- Left: text -->
+            <div class="anl-text">
+                <span class="anl-eyebrow">
+                    <span class="anl-eyebrow-dot"></span>
+                    Newsletter
+                </span>
+                <h2 class="anl-heading">
+                    Stay ahead with<br><em class="anl-accent">style insights</em>
+                </h2>
+                <p class="anl-desc">Register now to get updates on promotions, style tips, and coupons delivered straight to your inbox.</p>
+            </div>
+
+            <!-- Right: form -->
+            <form class="anl-form" id="anl-form" action="404.html">
+                <div class="anl-input-wrap">
+                    <svg class="anl-input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+                    <input type="email" class="anl-input" placeholder="Enter your email address" required aria-label="Email address">
+                </div>
+                <button type="submit" class="anl-btn">
+                    Join now
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+            </form>
+
+            <!-- Success message (hidden until submit) -->
+            <div class="anl-success" id="anl-success">
+                <span class="anl-success-icon"><i class="fa-solid fa-check"></i></span>
+                <span>You're subscribed! Welcome to Stackly.</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== FOOTER (identical to index.html) ===== -->
+    <footer class="site-footer" id="site-footer">
+        <div class="footer-bg-anim"></div>
+        <div class="footer-inner">
+
+            <!-- Col 1: Brand -->
+            <div class="footer-col footer-brand-col">
+                <a href="index.html" class="footer-logo-link">
+                    <img src="../assets/home/stackly-logo.webp" alt="Stackly Logo" class="footer-logo">
+                </a>
+                <p class="footer-tagline">At Stackly, we deliver refined styling and custom-fit apparel focused on quality, craftsmanship, and timeless design.</p>
+                <div class="footer-contact-details">
+                    <a href="tel:+18005551234" class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 14a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+                        +1 (800) 555-4321
+                    </a>
+                    <a href="mailto:concierge@stackly.com" class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        concierge@stackly.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- Col 2: Office -->
+                        <div class="footer-col footer-office-col">
+                <h4 class="footer-col-title">Office</h4>
+                <address class="footer-address">
+                    Salem Shop,<br>
+                    MMR Complex, Chinna Thirupathi,<br>
+                    near Chinna Muniyappan Kovil,<br>
+                    Salem, Tamil Nadu 636008
+                </address>
+                 <!-- Embedded Google Map -->
+                <div class="footer-map" style="margin-top: 12px; border-radius: 8px; overflow: hidden; height: 100px; border: 1px solid rgba(255,255,255,0.1);">
+                    <iframe src="https://maps.google.com/maps?q=MMR%20Complex,%20Chinna%20Thirupathi,%20near%20Chinna%20Muniyappan%20Kovil,%20Salem,%20Tamil%20Nadu%20636008&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Col 3: Links -->
+            <div class="footer-col footer-links-col">
+                <h4 class="footer-col-title">Links</h4>
+                <nav class="footer-nav">
+                    <a href="index.html" class="footer-nav-link">Home</a>
+                    <a href="about.html" class="footer-nav-link">About us</a>
+                    <a href="service.html" class="footer-nav-link">Service</a>
+                    <a href="blog.html" class="footer-nav-link">Blog</a>
+                    <a href="contact.html" class="footer-nav-link">Contact</a>
+                    <a href="login.html" class="footer-nav-link">Login</a>
+                    <a href="signup.html" class="footer-nav-link">Signup</a>
+                </nav>
+            </div>
+
+            <!-- Col 4: Follow Us -->
+            <div class="footer-col footer-social-col">
+                <h4 class="footer-col-title">Follow us</h4>
+                <div class="footer-social-icons">
+                    <a href="404.html" class="footer-social-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="404.html" class="footer-social-btn" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.95C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96C1 8.12 1 12 1 12s0 3.88.46 5.58a2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95C23 15.88 23 12 23 12s0-3.88-.46-5.58z"/><polygon fill="currentColor" stroke="none" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; 2025 Stackly Fashion Store. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <span>·</span>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/about.js"></script>
+    <script src="../js/cart-helper.js"></script>
+
+

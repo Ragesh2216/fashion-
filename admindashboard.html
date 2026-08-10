@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - STACKLY Fashion Studio</title>
+    <meta name="description" content="Manage appointments, fittings, styles, and customization details on the STACKLY Fashion Studio dashboard.">
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-wrapper">
+        
+        <!-- ===== SIDEBAR NAVIGATION ===== -->
+        <aside class="dashboard-sidebar" id="sidebar-drawer">
+            <a href="index.html" class="db-sidebar-brand">
+                <img src="../assets/home/stackly-logo.webp" alt="STACKLY Logo" class="db-brand-logo">
+                <span class="db-brand-text">Stackly Studio</span>
+            </a>
+            
+            <ul class="db-sidebar-menu">
+                <li class="db-menu-item active">
+                    <a href="#">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>Overview</span>
+                    </a>
+                </li>
+                <li class="db-menu-item">
+                    <a href="404.html">
+                        <i class="fa-solid fa-scissors"></i>
+                        <span>Services & Fittings</span>
+                    </a>
+                </li>
+                <li class="db-menu-item">
+                    <a href="404.html">
+                        <i class="fa-solid fa-shirt"></i>
+                        <span>Design Trends</span>
+                    </a>
+                </li>
+                <li class="db-menu-item">
+                    <a href="404.html">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>Our Stylists</span>
+                    </a>
+                </li>
+                <li class="db-menu-item">
+                    <a href="404.html">
+                        <i class="fa-solid fa-address-book"></i>
+                        <span>Boutique Contacts</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="db-sidebar-footer">
+                <div class="db-user-profile">
+                    <div class="db-avatar" id="admin-avatar">VS</div>
+                    <div class="db-user-info">
+                        <p id="admin-name-display">Victoria Sterling</p>
+                        <span>Lead Designer</span>
+                    </div>
+                </div>
+                <a href="index.html" class="btn-db-logout" id="btn-logout-action">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Log Out</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- ===== MAIN CONTENT AREA ===== -->
+        <main class="dashboard-main">
+            
+            <!-- Top Navigation & Utility Bar -->
+            <header class="db-header">
+                <div class="db-menu-toggle" id="sidebar-hamburger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+                <div class="db-header-search">
+                    <i class="fa-solid fa-magnifying-glass db-search-icon"></i>
+                    <input type="text" class="db-search-input" placeholder="Search fittings, clients, orders...">
+                </div>
+                
+                <div class="db-header-actions">
+                </div>
+            </header>
+            
+            <!-- Greeting & Stats Summary -->
+            <section class="db-welcome-section">
+                <span class="db-eyebrow">Studio Dashboard</span>
+                <h1 class="db-title" id="welcome-admin-title">Welcome back, Victoria</h1>
+            </section>
+            
+            <!-- Metrics Cards Grid -->
+            <section class="db-stats-grid">
+                <!-- Card 1 -->
+                <div class="db-stat-card">
+                    <div class="db-stat-icon-wrapper">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <span class="db-stat-label">Active Fittings</span>
+                    <div class="db-stat-value">148</div>
+                    <span class="db-stat-growth positive">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span>+12% this week</span>
+                    </span>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="db-stat-card">
+                    <div class="db-stat-icon-wrapper">
+                        <i class="fa-solid fa-people-check"></i>
+                    </div>
+                    <span class="db-stat-label">Styled Clients</span>
+                    <div class="db-stat-value">1,240</div>
+                    <span class="db-stat-growth positive">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span>+5% this month</span>
+                    </span>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="db-stat-card">
+                    <div class="db-stat-icon-wrapper">
+                        <i class="fa-solid fa-pencil"></i>
+                    </div>
+                    <span class="db-stat-label">Active Stylists</span>
+                    <div class="db-stat-value">12</div>
+                    <span class="db-stat-growth neutral">
+                        <span>3 currently online</span>
+                    </span>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="db-stat-card">
+                    <div class="db-stat-icon-wrapper">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <span class="db-stat-label">Monthly Bookings</span>
+                    <div class="db-stat-value">$45,800</div>
+                    <span class="db-stat-growth positive">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span>+18.2% growth</span>
+                    </span>
+                </div>
+            </section>
+            
+            <!-- Bento Box Data Analytics Section -->
+            <section class="db-bento-grid">
+                <!-- Left: Booking Analytics Line Chart -->
+                <div class="db-bento-card">
+                    <div class="db-bento-header">
+                        <h2 class="db-bento-title">Styling Bookings Trend</h2>
+                        <span class="db-eyebrow" style="font-size: 0.72rem;">Last 6 Months</span>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <svg class="chart-svg" viewBox="0 0 500 220">
+                            <defs>
+                                <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="var(--primary)" stop-opacity="0.3"/>
+                                    <stop offset="100%" stop-color="var(--primary)" stop-opacity="0"/>
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Grid Lines -->
+                            <line class="chart-grid-line" x1="10" y1="20" x2="490" y2="20" />
+                            <line class="chart-grid-line" x1="10" y1="70" x2="490" y2="70" />
+                            <line class="chart-grid-line" x1="10" y1="120" x2="490" y2="120" />
+                            <line class="chart-grid-line" x1="10" y1="170" x2="490" y2="170" />
+                            
+                            <!-- Gradient Area under curve -->
+                            <path class="chart-path-fill" d="M 20 160 Q 110 130 200 110 T 380 50 L 480 80 L 480 200 L 20 200 Z" />
+                            
+                            <!-- Main Trend Curve Line -->
+                            <path class="chart-path-line" d="M 20 160 Q 110 130 200 110 T 380 50 L 480 80" />
+                            
+                            <!-- Data Points -->
+                            <circle class="chart-point" cx="20" cy="160" r="5" />
+                            <circle class="chart-point" cx="110" cy="130" r="5" />
+                            <circle class="chart-point" cx="200" cy="110" r="5" />
+                            <circle class="chart-point" cx="290" cy="90" r="5" />
+                            <circle class="chart-point" cx="380" cy="50" r="5" />
+                            <circle class="chart-point" cx="480" cy="80" r="5" />
+                        </svg>
+                        
+                        <div class="chart-labels-x">
+                            <span class="chart-label-x">Mar</span>
+                            <span class="chart-label-x">Apr</span>
+                            <span class="chart-label-x">May</span>
+                            <span class="chart-label-x">Jun</span>
+                            <span class="chart-label-x">Jul</span>
+                            <span class="chart-label-x">Aug</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Active Stylist Roster -->
+                <div class="db-bento-card">
+                    <div class="db-bento-header">
+                        <h2 class="db-bento-title">Active Stylists</h2>
+                        <span class="db-eyebrow" style="font-size: 0.72rem;">Status</span>
+                    </div>
+                    
+                    <div class="db-stylist-list">
+                        <!-- Stylist 1 -->
+                        <div class="db-stylist-row">
+                            <div class="db-stylist-meta">
+                                <div class="db-stylist-avatar" style="background-color: rgba(255, 133, 152, 0.15); color: var(--primary);">DB</div>
+                                <div class="db-stylist-name">
+                                    <p>Devon Brooks</p>
+                                    <span>Bespoke Tailoring</span>
+                                </div>
+                            </div>
+                            <span class="db-stylist-status active">Active</span>
+                        </div>
+                        
+                        <!-- Stylist 2 -->
+                        <div class="db-stylist-row">
+                            <div class="db-stylist-meta">
+                                <div class="db-stylist-avatar" style="background-color: rgba(255, 133, 152, 0.15); color: var(--primary);">AS</div>
+                                <div class="db-stylist-name">
+                                    <p>Amara Sterling</p>
+                                    <span>Bridal Stylist</span>
+                                </div>
+                            </div>
+                            <span class="db-stylist-status active">Active</span>
+                        </div>
+                        
+                        <!-- Stylist 3 -->
+                        <div class="db-stylist-row">
+                            <div class="db-stylist-meta">
+                                <div class="db-stylist-avatar" style="background-color: rgba(74, 21, 33, 0.1); color: var(--primary-dark);">HK</div>
+                                <div class="db-stylist-name">
+                                    <p>Harlan Kross</p>
+                                    <span>Personal Stylist</span>
+                                </div>
+                            </div>
+                            <span class="db-stylist-status away">Away</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Table Section: Recent Fittings -->
+            <section class="db-table-card">
+                <div class="db-table-header">
+                    <h2 class="db-table-title">Recent Fittings & Styling Orders</h2>
+                    <a href="404.html" style="text-decoration: none;">
+                        <button class="btn-db-action-primary" id="btn-create-fitting-req">
+                            <i class="fa-solid fa-plus"></i>
+                            <span>Book New Fitting</span>
+                        </button>
+                    </a>
+                </div>
+                
+                <div class="db-table-responsive">
+                    <table class="db-table">
+                        <thead>
+                            <tr>
+                                <th>Client Name</th>
+                                <th>Assigned Stylist</th>
+                                <th>Service Type</th>
+                                <th>Fitting Date</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1 -->
+                            <tr>
+                                <td>
+                                    <div class="db-client-meta">
+                                        <span class="db-client-name">Aveline Vance</span>
+                                        <span class="db-client-email">aveline@gmail.com</span>
+                                    </div>
+                                </td>
+                                <td>Amara Sterling</td>
+                                <td>Bespoke Bridal fitting</td>
+                                <td>Aug 08, 2026</td>
+                                <td><span class="db-status-badge fitting">In Fitting</span></td>
+                                <td>
+                                    <div class="db-table-actions">
+                                        <a href="404.html"><button class="btn-table-action" aria-label="Edit Client"><i class="fa-solid fa-pen"></i></button></a>
+                                        <a href="404.html"><button class="btn-table-action" aria-label="View Details"><i class="fa-solid fa-eye"></i></button></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <!-- Row 2 -->
+                            <tr>
+                                <td>
+                                    <div class="db-client-meta">
+                                        <span class="db-client-name">Charles Dupont</span>
+                                        <span class="db-client-email">cdupont@gmail.com</span>
+                                    </div>
+                                </td>
+                                <td>Devon Brooks</td>
+                                <td>Menswear custom suit</td>
+                                <td>Aug 09, 2026</td>
+                                <td><span class="db-status-badge scheduled">Scheduled</span></td>
+                                <td>
+                                    <div class="db-table-actions">
+                                        <a href="404.html"><button class="btn-table-action" aria-label="Edit Client"><i class="fa-solid fa-pen"></i></button></a>
+                                        <a href="404.html"><button class="btn-table-action" aria-label="View Details"><i class="fa-solid fa-eye"></i></button></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <!-- Row 3 -->
+                            <tr>
+                                <td>
+                                    <div class="db-client-meta">
+                                        <span class="db-client-name">Eleanora Ruiz</span>
+                                        <span class="db-client-email">eruiz@gmail.com</span>
+                                    </div>
+                                </td>
+                                <td>Harlan Kross</td>
+                                <td>Seasonal Styling Consult</td>
+                                <td>Aug 07, 2026</td>
+                                <td><span class="db-status-badge completed">Completed</span></td>
+                                <td>
+                                    <div class="db-table-actions">
+                                        <a href="404.html"><button class="btn-table-action" aria-label="Edit Client"><i class="fa-solid fa-pen"></i></button></a>
+                                        <a href="404.html"><button class="btn-table-action" aria-label="View Details"><i class="fa-solid fa-eye"></i></button></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- ===== Salem Studio Location Section ===== -->
+            <section class="db-bento-grid" style="margin-top: 24px;">
+                <div class="db-bento-card" style="grid-column: span 2;">
+                    <div class="db-bento-header">
+                        <h2 class="db-bento-title">Our Salem Boutique & Showroom Map</h2>
+                        <span class="db-eyebrow" style="font-size: 0.72rem;">Visit Us</span>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 24px; margin-top: 16px; align-items: center;">
+                        <div>
+                            <h3 style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--primary-dark); margin-bottom: 8px;">Salem Flagship Studio</h3>
+                            <p style="font-family: var(--font-body); font-size: 0.9rem; color: var(--text-body); line-height: 1.5; margin-bottom: 12px;">
+                                MMR Complex, Chinna Thirupathi,<br>
+                                near Chinna Muniyappan Kovil,<br>
+                                Salem, Tamil Nadu 636008
+                            </p>
+                            <p style="font-family: var(--font-body); font-size: 0.85rem; color: var(--text-body);">
+                                <strong>Hours:</strong> Mon - Sat: 10:00 AM - 8:00 PM<br>
+                                <strong>Phone:</strong> +1 (800) 555-4321<br>
+                                <strong>Email:</strong> concierge@stackly.com
+                            </p>
+                        </div>
+                        <div style="border-radius: 12px; overflow: hidden; height: 180px; border: 1.5px solid var(--glass-border); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                            <iframe src="https://maps.google.com/maps?q=MMR%20Complex,%20Chinna%20Thirupathi,%20near%20Chinna%20Muniyappan%20Kovil,%20Salem,%20Tamil%20Nadu%20636008&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+    </div>
+
+    <!-- JavaScript code for hamburger sidebar toggle and interactive charts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburgerBtn = document.getElementById("sidebar-hamburger-btn");
+            const sidebar = document.getElementById("sidebar-drawer");
+            const welcomeTitle = document.getElementById("welcome-admin-title");
+            const btnLogout = document.getElementById("btn-logout-action");
+            
+            // Toggle sidebar active state on mobile
+            if (hamburgerBtn && sidebar) {
+                hamburgerBtn.addEventListener("click", (e) => {
+                    sidebar.classList.toggle("active");
+                    e.stopPropagation();
+                });
+                
+                // Clicking outside the sidebar closes it on mobile
+                document.addEventListener("click", (e) => {
+                    if (sidebar.classList.contains("active") && !sidebar.contains(e.target) && e.target !== hamburgerBtn) {
+                        sidebar.classList.remove("active");
+                    }
+                });
+            }
+            
+            // Dynamic Name Loader from LocalStorage
+            const storedEmail = localStorage.getItem('stacklyUserEmail');
+            const adminNameDisplay = document.getElementById('admin-name-display');
+            const adminAvatar = document.getElementById('admin-avatar');
+            
+            if (storedEmail) {
+                const username = storedEmail.split('@')[0];
+                const capitalizedName = username.charAt(0).toUpperCase() + username.slice(1);
+                
+                if (welcomeTitle) {
+                    welcomeTitle.textContent = `Welcome back, ${capitalizedName}`;
+                }
+                if (adminNameDisplay) {
+                    adminNameDisplay.textContent = capitalizedName;
+                }
+                if (adminAvatar) {
+                    adminAvatar.textContent = capitalizedName.charAt(0).toUpperCase();
+                }
+            }
+            
+            // Simple greeting message animation
+            if (welcomeTitle) {
+                welcomeTitle.style.opacity = "0";
+                welcomeTitle.style.transform = "translateY(15px)";
+                welcomeTitle.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+                setTimeout(() => {
+                    welcomeTitle.style.opacity = "1";
+                    welcomeTitle.style.transform = "translateY(0)";
+                }, 150);
+            }
+            
+            // Log out handler
+            if (btnLogout) {
+                btnLogout.addEventListener("click", () => {
+                    localStorage.removeItem('stacklyUserEmail');
+                    localStorage.removeItem('stacklyUserRole');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
