@@ -84,14 +84,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // 6. Inline Validation Check Listeners (Remove error style on user input)
-    const formInputs = document.querySelectorAll(".form-input");
+    const formInputs = document.querySelectorAll(".form-input, .form-checkbox");
     formInputs.forEach(input => {
-        input.addEventListener("input", () => {
+        const clearError = () => {
             const group = input.closest(".form-group");
             if (group && group.classList.contains("has-error")) {
                 group.classList.remove("has-error");
             }
-        });
+        };
+        input.addEventListener("input", clearError);
+        if (input.type === "checkbox") {
+            input.addEventListener("change", clearError);
+        }
     });
 
     // 7. Form validations and submit Toast notifications
@@ -107,14 +111,26 @@ document.addEventListener("DOMContentLoaded", () => {
             const inputs = authForm.querySelectorAll("[required]");
             inputs.forEach(input => {
                 const group = input.closest(".form-group");
+                if (!group) return;
                 const errorSpan = group.querySelector(".error-message");
                 const value = input.value.trim();
 
-                // Check empty condition
-                if (!value) {
+                // Check empty / unchecked condition
+                let isInvalid = false;
+                if (input.type === "checkbox") {
+                    isInvalid = !input.checked;
+                } else {
+                    isInvalid = !value;
+                }
+
+                if (isInvalid) {
                     group.classList.add("has-error");
                     if (errorSpan) {
-                        errorSpan.querySelector(".error-text").textContent = "Please fill in this field.";
+                        if (input.type === "checkbox") {
+                            errorSpan.querySelector(".error-text").textContent = "You must agree to the terms to proceed.";
+                        } else {
+                            errorSpan.querySelector(".error-text").textContent = "Please fill in this field.";
+                        }
                     }
                     hasErrors = true;
                 } else {
@@ -122,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 // Verify Gmail Address matches mandatory domain rule
-                if (input.getAttribute("type") === "email" && value) {
+                if (input.getAttribute("type") === "email" && value && input.type !== "checkbox") {
                     if (!value.endsWith("@gmail.com")) {
                         group.classList.add("has-error");
                         if (errorSpan) {

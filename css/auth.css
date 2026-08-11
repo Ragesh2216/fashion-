@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    STACKLY Healthcare - auth.css
    Custom styles for Login & Signup pages
    ========================================================================== */
@@ -763,6 +763,94 @@
 .btn-form-submit:active {
     transform: translateY(-1px) scale(0.98);
     box-shadow: 0 6px 15px rgba(26, 26, 26, 0.2);
+}
+
+/* Custom Checkbox & Forgot Password Styles */
+.form-options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-container input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid rgba(255, 133, 152, 0.3);
+    border-radius: 4px;
+    background-color: var(--bg-mint);
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition-quick);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-container input[type="checkbox"]:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(255, 133, 152, 0.15);
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.checkbox-container input[type="checkbox"]:checked::after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translate(-0.5px, -1px);
+}
+
+.checkbox-text {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-body);
+}
+
+.checkbox-text a {
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition-quick);
+}
+
+.checkbox-text a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.forgot-password-link {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    text-decoration: none;
+    transition: var(--transition-quick);
+}
+
+.forgot-password-link:hover {
+    color: var(--primary);
+    text-decoration: underline;
 }
 
 
